@@ -9,6 +9,28 @@ search: false
 @import "minimal-mistakes";
 
 /* ---------------------------------------------------------------------------
+   Global font size
+   The theme scales everything off the root font-size (and bumps it up at wider
+   breakpoints). Lowering these shrinks the whole site proportionally.
+   Theme defaults are 16 / 18 / 20 / 22px.
+   --------------------------------------------------------------------------- */
+html {
+  font-size: 13px; // default 16px
+
+  @include breakpoint($medium) {
+    font-size: 14px; // default 18px
+  }
+
+  @include breakpoint($large) {
+    font-size: 15px; // default 20px
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 16px; // default 22px
+  }
+}
+
+/* ---------------------------------------------------------------------------
    News list
    --------------------------------------------------------------------------- */
 .news-list ul {
