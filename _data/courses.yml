@@ -1,0 +1,9 @@
+# ---------------------------------------------------------------------------
+# Courses. Each is just a link out to the course's own page.
+# Add `term` (optional) to note when it's offered.
+# ---------------------------------------------------------------------------
+# - code: "ECE-XXXX"
+#   title: "Course Title"
+#   term: "Fall 2025"
+#   url: "https://example.com/course-page"
+#   description: "One-line description (optional)."

@@ -1,0 +1,8 @@
+# ---------------------------------------------------------------------------
+# Group alumni. Newest first is a good convention.
+# `now` is the "where they are now" line shown after the name.
+# ---------------------------------------------------------------------------
+# - name: "Example Alum"
+#   degree: "PhD 2023"          # or "MS 2022", "Postdoc 2021", etc.
+#   now: "Research Scientist, Example Corp"
+#   website: ""

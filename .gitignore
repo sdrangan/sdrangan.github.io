@@ -1,0 +1,10 @@
+# Source materials (bio, proposals, original photo) — not published
+material/
+
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+Gemfile.lock

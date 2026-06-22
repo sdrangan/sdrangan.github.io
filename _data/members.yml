@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# Current group members.
+#
+# To add yourself: copy a block below and fill it in. Drop a square-ish photo
+# into assets/images/members/ and point `photo` at it (or leave it blank to
+# use the placeholder). Everything except `name` is optional.
+# ---------------------------------------------------------------------------
+- name: "Haozhe Lei"
+  role: "PhD Student"
+  photo: ""            # e.g. members/haozhe-lei.jpg
+  interests: ""        # e.g. "Reinforcement learning for wireless"
+  email: ""
+  website: ""
+  scholar: ""
+
+- name: "Shizhen Jia"
+  role: "PhD Student"
+  photo: ""
+  interests: "Satellite-terrestrial co-existence, beamforming"
+  email: ""
+  website: ""
+  scholar: ""
+
+- name: "Ruibin Chen"
+  role: "PhD Student"
+  photo: ""
+  interests: ""
+  email: ""
+  website: ""
+  scholar: ""
+
+- name: "Jayadev Joy"
+  role: "PhD Student"
+  photo: ""
+  interests: ""
+  email: ""
+  website: ""
+  scholar: ""
+
+- name: "Ali Rasteh"
+  role: "PhD Student"
+  photo: ""
+  interests: ""
+  email: ""
+  website: ""
+  scholar: ""

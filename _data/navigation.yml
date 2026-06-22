@@ -1,0 +1,12 @@
+# Top navigation bar
+main:
+  - title: "Home"
+    url: /
+  - title: "Group"
+    url: /group/
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Teaching"
+    url: /teaching/

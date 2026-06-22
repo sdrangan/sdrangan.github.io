@@ -1,0 +1,152 @@
+---
+# Main stylesheet: imports the Minimal Mistakes theme, then adds custom styles.
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ---------------------------------------------------------------------------
+   News list
+   --------------------------------------------------------------------------- */
+.news-list ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Member grid (Group page)
+   --------------------------------------------------------------------------- */
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5em;
+  margin: 1.5em 0;
+}
+
+.member-card {
+  text-align: center;
+}
+
+.member-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 0.5em;
+  display: block;
+  background: #e9ecef;
+}
+
+.member-name {
+  margin: 0.2em 0 0;
+  font-size: 1.05em;
+}
+
+.member-role {
+  margin: 0.1em 0;
+  color: #6c757d;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.member-interests {
+  margin: 0.3em 0;
+  font-size: 0.8em;
+  color: #555;
+}
+
+.member-links {
+  font-size: 0.8em;
+  margin: 0.3em 0;
+}
+
+.alumni-list {
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------------------------
+   Project grid (Research page)
+   --------------------------------------------------------------------------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5em;
+  margin: 1.5em 0;
+}
+
+.project-card {
+  display: block;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: inherit;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  background: #fff;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  display: block;
+  background: #dfe6ee;
+}
+
+.project-body {
+  padding: 0.8em 1em 1.1em;
+}
+
+.project-body h3 {
+  margin: 0.2em 0 0.3em;
+  font-size: 1.1em;
+}
+
+.project-sponsor {
+  margin: 0 0 0.4em;
+  font-size: 0.78em;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.project-summary {
+  margin: 0;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* ---------------------------------------------------------------------------
+   Course list (Teaching page)
+   --------------------------------------------------------------------------- */
+.course-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.course-item {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.course-term {
+  color: #6c757d;
+  font-size: 0.85em;
+}
+
+.course-desc {
+  font-size: 0.88em;
+  color: #555;
+  margin-top: 0.2em;
+}

@@ -1,14 +1,92 @@
-lsi: false
-safe: true
-source: .
-incremental: false
+# ---------------------------------------------------------------------------
+# Site settings
+# ---------------------------------------------------------------------------
+title: "Rangan Research Group"
+subtitle: "Wireless Communications, Signal Processing & Hardware Co-Design"
+name: "Sundeep Rangan"
+description: >-
+  Research group of Prof. Sundeep Rangan at NYU Tandon / NYU WIRELESS, working on
+  next-generation wireless systems: upper mid-band (FR3) arrays, satellite-terrestrial
+  co-existence, and algorithm-hardware co-design.
+url: "https://sdrangan.github.io"
+repository: "sdrangan/sdrangan.github.io"
+
+# Theme -------------------------------------------------------------------
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default" # "default", "air", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+search: true
+
+# Build settings ----------------------------------------------------------
+markdown: kramdown
 highlighter: rouge
-gist:
-  noscript: false
+lsi: false
+incremental: false
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Outputting
+permalink: /:categories/:title/
+timezone: America/New_York
+
+include:
+  - _pages
+
+# ---------------------------------------------------------------------------
+# Author / sidebar profile
+# ---------------------------------------------------------------------------
+author:
+  name: "Sundeep Rangan"
+  avatar: "/assets/images/sundeep-rangan.jpg"
+  bio: "Professor, ECE, NYU Tandon &middot; Director, NYU WIRELESS"
+  location: "Brooklyn, NY"
+  email: "srangan@nyu.edu"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:srangan@nyu.edu"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=fzSHXS8AAAAJ&hl=en&oi=ao"
+    - label: "NYU WIRELESS"
+      icon: "fas fa-fw fa-link"
+      url: "http://wireless.engineering.nyu.edu/"
+
+# ---------------------------------------------------------------------------
+# Collections
+# ---------------------------------------------------------------------------
+collections:
+  projects:
+    output: true
+    permalink: /research/:path/
+
+# ---------------------------------------------------------------------------
+# Defaults
+# ---------------------------------------------------------------------------
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: false
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed

@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------------------
+# News items, newest first. `date` is free text (shown as-is).
+# `link`/`link_label` are optional.
+# ---------------------------------------------------------------------------
+- date: "Jan 2026"
+  text: "New paper on distributed uplink anti-jamming in LEO mega-constellations via game-theoretic beamforming."
+  link: "https://arxiv.org/abs/2601.15557"
+  link_label: "arXiv:2601.15557"
+
+- date: "Oct 2025"
+  text: "New paper on joint detection, channel estimation, and interference nulling for terrestrial-satellite downlink co-existence in the upper mid-band."
+  link: "https://arxiv.org/abs/2510.08824"
+  link_label: "arXiv:2510.08824"
+
+- date: "2024"
+  text: "Project launched: Spectrally Agile Large-Scale Arrays for the Upper Mid-Band, supported by NTIA (NOFO-1 and NOFO-2)."
+  link: "/research/spectrally-agile-arrays/"
+  link_label: "Project page"
+
+- date: "2024"
+  text: "New NSF CISE Core award: Hardware Co-Design for next-generation wireless."
+  link: "/research/hardware-co-design/"
+  link_label: "Project page"
