@@ -2,45 +2,45 @@
 # Current group members.
 #
 # To add yourself: copy a block below and fill it in. Drop a square-ish photo
-# into assets/images/members/ and point `photo` at it (or leave it blank to
-# use the placeholder). Everything except `name` is optional.
+# into assets/images/members/ and point `photo` at it (path relative to
+# assets/images/). Everything except `name` is optional.
 # ---------------------------------------------------------------------------
 - name: "Haozhe Lei"
   role: "PhD Student"
-  photo: ""            # e.g. members/haozhe-lei.jpg
-  interests: ""        # e.g. "Reinforcement learning for wireless"
+  photo: "members/haozhe-lei.png"
+  interests: ""
   email: ""
-  website: ""
+  website: "https://panshark.github.io/"
   scholar: ""
 
 - name: "Shizhen Jia"
   role: "PhD Student"
-  photo: ""
+  photo: "members/shizhen-jia.jpg"
   interests: "Satellite-terrestrial co-existence, beamforming"
   email: ""
-  website: ""
+  website: "https://shizhen-jia.github.io/"
   scholar: ""
 
 - name: "Ruibin Chen"
   role: "PhD Student"
-  photo: ""
-  interests: ""
+  photo: "members/ruibin-chen.png"
+  interests: "6G spectrum sharing, MIMO channel estimation, ISAC, O-RAN"
   email: ""
-  website: ""
+  website: "https://www.linkedin.com/in/ruibin-chen-422290357/"
   scholar: ""
 
 - name: "Jayadev Joy"
   role: "PhD Student"
-  photo: ""
-  interests: ""
+  photo: "members/jayadev-joy.png"
+  interests: "Wireless communications, ray tracing, statistical signal processing, AI/ML"
   email: ""
-  website: ""
+  website: "https://sites.google.com/view/jayadevjoy"
   scholar: ""
 
 - name: "Ali Rasteh"
   role: "PhD Student"
-  photo: ""
+  photo: "members/ali-rasteh.jpg"
   interests: ""
   email: ""
-  website: ""
+  website: "https://ali-rasteh.github.io/"
   scholar: ""

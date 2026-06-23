@@ -40,6 +40,35 @@ html {
 }
 
 /* ---------------------------------------------------------------------------
+   PI profile (Group page) — photo left, bio right
+   --------------------------------------------------------------------------- */
+.pi-profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  align-items: flex-start;
+  margin: 1em 0 1.5em;
+}
+
+.pi-photo {
+  width: 220px;
+  max-width: 40%;
+  border-radius: 6px;
+  flex: 0 0 auto;
+}
+
+.pi-bio {
+  flex: 1 1 320px;
+}
+
+@media (max-width: 600px) {
+  .pi-photo {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------
    Member grid (Group page)
    --------------------------------------------------------------------------- */
 .member-grid {
@@ -51,6 +80,10 @@ html {
 
 .member-card {
   text-align: center;
+}
+
+.member-card > a {
+  display: block;
 }
 
 .member-photo {

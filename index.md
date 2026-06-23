@@ -2,7 +2,7 @@
 layout: single
 title: "Rangan Research Group"
 permalink: /
-author_profile: true
+author_profile: false
 toc: false
 ---
 
