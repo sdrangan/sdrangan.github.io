@@ -44,3 +44,7 @@ Maintenance notes for the group website. This file is not published on the site.
    Open <http://localhost:4000>. The page refreshes automatically when you save
    a file. Changes to `_config.yml` need a server restart (Ctrl+C, then run the
    command again).
+
+   If a page suddenly shows up unstyled (plain blue links, huge images), the
+   browser reloaded while Jekyll was mid-rebuild. Hard refresh with
+   **Ctrl+Shift+R**.
