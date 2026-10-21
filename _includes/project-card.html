@@ -2,6 +2,8 @@
 <a class="project-card" href="{{ p.url | relative_url }}">
   {% if p.thumbnail and p.thumbnail != '' %}
   <img class="project-thumb" src="{{ p.thumbnail | relative_url }}" alt="">
+  {% else %}
+  <div class="project-thumb project-thumb-blank" aria-hidden="true"></div>
   {% endif %}
   <div class="project-body">
     {% if p.sponsor and p.sponsor != '' %}<span class="tag">{{ p.sponsor }}</span>{% endif %}

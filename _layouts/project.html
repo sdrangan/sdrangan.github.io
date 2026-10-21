@@ -11,7 +11,7 @@ layout: default
 </section>
 
 <section class="page-body">
-  <div class="container prose prose-narrow">
+  <div class="container prose{% unless page.wide %} prose-narrow{% endunless %}">
 {{ content }}
   </div>
 </section>
