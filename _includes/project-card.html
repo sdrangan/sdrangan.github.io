@@ -1,7 +1,8 @@
 {% assign p = include.project %}
-<a class="project-card" href="{{ p.url | relative_url }}">
+{% if p.external_url and p.external_url != '' %}{% assign href = p.external_url %}{% else %}{% assign href = p.url | relative_url %}{% endif %}
+<a class="project-card" href="{{ href }}">
   {% if p.thumbnail and p.thumbnail != '' %}
-  <img class="project-thumb" src="{{ p.thumbnail | relative_url }}" alt="">
+  <img class="project-thumb{% if p.thumbnail_fit == 'contain' %} project-thumb-contain{% endif %}" src="{{ p.thumbnail | relative_url }}" alt="">
   {% else %}
   <div class="project-thumb project-thumb-blank" aria-hidden="true"></div>
   {% endif %}
@@ -9,6 +10,10 @@
     {% if p.sponsor and p.sponsor != '' %}<span class="tag">{{ p.sponsor }}</span>{% endif %}
     <h3>{{ p.title }}</h3>
     <p>{{ p.summary }}</p>
+    {% if p.external_url and p.external_url != '' %}
+    <span class="more">{{ p.external_label | default: "Visit site" }} &#8599;</span>
+    {% else %}
     <span class="more">Learn more &rarr;</span>
+    {% endif %}
   </div>
 </a>

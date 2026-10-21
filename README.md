@@ -34,6 +34,8 @@ drop a roughly square image in `assets/images/members/` and set
 Create a new `.md` file in `_projects/` (copy an existing one). The Research page
 lists projects automatically, ordered by the `order:` field in the front matter.
 Add a thumbnail to `assets/images/projects/` and set `thumbnail:` to show it.
+To make a tile link straight to an outside site (as WaveFlow does), set
+`external_url:` (and optionally `external_label:`) in the front matter.
 
 ## Local preview
 

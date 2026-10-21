@@ -24,7 +24,7 @@ Supported by the National Science Foundation (NSF), CISE Core program, 2024.
 
 ## Related
 
-- See also our [WaveFlow](/research/waveflow/) project on agentic
+- See also our [WaveFlow](https://sdrangan.github.io/waveflow/docs/) project on agentic
   algorithm-hardware co-design.
 
 ## People

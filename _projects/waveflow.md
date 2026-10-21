@@ -3,19 +3,12 @@ title: "WaveFlow: Agentic Algorithm-Hardware Co-Design"
 order: 4
 summary: "A Python-based, agentic framework for automated algorithm-hardware co-design of wireless systems."
 sponsor: ""
-thumbnail: ""
+thumbnail: "/assets/images/projects/waveflow/hero.svg"
+thumbnail_fit: contain
+# The Research tile links straight here; /research/waveflow/ redirects to it.
+external_url: "https://sdrangan.github.io/waveflow/docs/"
+external_label: "Open the docs"
 ---
 
-## Overview
-
-**WaveFlow** is a Python-based, agentic framework for algorithm-hardware
-co-design. It aims to automate and accelerate the exploration of design tradeoffs
-across the algorithm and hardware stack for wireless systems.
-
-## Documentation
-
-- [WaveFlow documentation](https://sdrangan.github.io/waveflow/docs/){: .btn .btn-primary}
-
-## People
-
-*Add the students and collaborators on this project.*
+WaveFlow has its own documentation site:
+[{{ page.external_url }}]({{ page.external_url }})

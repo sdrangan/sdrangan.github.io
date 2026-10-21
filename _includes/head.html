@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.external_url %}<meta http-equiv="refresh" content="0; url={{ page.external_url }}">{% endif %}
 {% seo %}
 <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
