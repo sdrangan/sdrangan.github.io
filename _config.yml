@@ -52,6 +52,7 @@ include:
 
 exclude:
   - README.md
+  - admin.md
   - Gemfile
   - Gemfile.lock
   - material/
