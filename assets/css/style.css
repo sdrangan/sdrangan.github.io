@@ -150,6 +150,7 @@ a:hover { color: var(--violet-ultra); }
     radial-gradient(900px 300px at 90% -20%, rgba(137, 0, 225, .5), transparent 60%),
     linear-gradient(135deg, var(--violet-deep), var(--violet));
 }
+.page-hero-overlap { padding-bottom: 104px; } /* room for a card overlapping the banner */
 .page-hero::after {
   content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .1;
   background-image: repeating-radial-gradient(circle at 95% 0%, #fff 0 1px, transparent 1px 34px);
@@ -295,6 +296,106 @@ h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
   .vector:nth-child(even) .vector-media { order: 0; }
 }
 
+/* Project page: shared blocks (stats, pills, figure, thrusts, people) */
+.prose .section-label + h2 { margin-top: 0; }
+.prose .section-gap { margin-top: 64px; }
+
+.stat-strip, .prose > .stat-strip:first-child {
+  position: relative; margin: -96px 0 56px; display: grid; grid-template-columns: repeat(3, 1fr);
+  background: #fff; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 20px 60px rgba(40, 6, 70, .18);
+  overflow: hidden;
+}
+.stat { padding: 26px 20px 20px; text-align: center; border-right: 1px solid var(--line); }
+.stat:nth-child(3) { border-right: 0; }
+.stat-num {
+  display: block; font-size: clamp(36px, 5vw, 52px); font-weight: 800; line-height: 1; letter-spacing: -.02em;
+  background: linear-gradient(90deg, var(--violet), var(--violet-ultra)); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.stat-num small { font-size: .42em; font-weight: 700; margin-left: 4px; letter-spacing: 0; }
+.stat-label { display: block; margin-top: 8px; font-size: 12.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.prose .stat-note {
+  grid-column: 1 / -1; margin: 0; padding: 14px 20px; text-align: center; font-size: 15px;
+  background: var(--violet-light); color: var(--violet-deep); font-family: var(--font-display); font-size: 17px;
+}
+
+.codesign-intro { margin-bottom: 40px; }
+.pill-list { display: grid; gap: 14px; }
+.pill {
+  display: flex; gap: 16px; align-items: flex-start; background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 18px 20px;
+}
+.pill .icon {
+  flex: none; width: 44px; height: 44px; border-radius: 11px; background: var(--violet-light);
+  color: var(--violet); display: grid; place-items: center;
+}
+.pill .icon svg { width: 24px; height: 24px; }
+.prose .pill h3 { font-size: 17px; margin: 0 0 4px; }
+.prose .pill p { margin: 0; font-size: 15px; }
+
+.figure-card {
+  margin: 0; background: #fff; border-radius: 18px; border: 1px solid var(--line); box-shadow: var(--shadow);
+  padding: 24px 24px 18px;
+}
+.figure-card img { width: 100%; height: auto; }
+.figure-card figcaption { font-size: 14.5px; color: var(--muted); margin-top: 12px; text-align: center; }
+
+.thrusts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.thrust {
+  position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 30px 26px 24px; box-shadow: var(--shadow); overflow: hidden;
+}
+.thrust::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+  background: linear-gradient(90deg, var(--violet), var(--violet-ultra));
+}
+.prose .thrust h3 { font-size: 21px; margin: 6px 0 10px; color: var(--violet-deep); }
+.prose .thrust > p { margin: 0 0 16px; font-size: 15.5px; }
+.prose .thrust .subthrusts li span:first-child { font-weight: 600; color: var(--ink); text-align: left; }
+.prose .thrust .subthrusts li span:last-child { white-space: nowrap; }
+
+.team-note { font-size: 15px; margin: -6px 0 22px; }
+.pi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.pi-mini {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 24px 18px 20px; text-align: center;
+}
+.pi-mini .avatar { width: 96px; height: 96px; font-size: 28px; margin: 0 auto 12px; }
+.prose .pi-mini h4 { margin: 0; font-size: 17px; color: var(--ink); }
+.prose .pi-mini p { margin: 0; font-size: 14px; line-height: 1.5; }
+.avatar {
+  flex: none; width: 56px; height: 56px; border-radius: 50%; object-fit: cover;
+  border: 3px solid #fff; box-shadow: 0 0 0 2px var(--violet-mid);
+}
+.avatar-initials {
+  display: grid; place-items: center; color: #fff; font-weight: 800; letter-spacing: .03em; font-size: 18px;
+  background: linear-gradient(135deg, var(--violet), var(--violet-ultra));
+}
+.role-badge.lead { background: var(--violet); color: #fff; }
+
+.prose .students-head { margin: 36px 0 14px; font-size: 19px; color: var(--violet-deep); }
+.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.person {
+  display: flex; gap: 16px; align-items: center; background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 16px 18px;
+}
+.prose .person h4 { margin: 0; font-size: 16.5px; }
+.person h4 a { color: var(--ink); text-decoration: none; }
+.person h4 a:hover { color: var(--violet); }
+.person .role-badge { margin: 4px 0 4px; }
+.prose .person p { margin: 0; font-size: 14px; line-height: 1.45; }
+
+.prose .related { margin-top: 40px; }
+.prose .ack { margin-top: 28px; font-size: 13px; color: var(--muted); line-height: 1.55; }
+
+@media (max-width: 960px) { .pi-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 760px) {
+  .thrusts { grid-template-columns: 1fr; }
+  .stat-strip, .prose > .stat-strip:first-child { margin-top: -72px; }
+  .stat { padding: 20px 8px 16px; }
+  .stat-label { font-size: 11px; letter-spacing: .06em; }
+}
+@media (max-width: 480px) { .pi-grid { grid-template-columns: 1fr; } }
+
 /* PI card (home) */
 .pi-card { padding: 0; overflow: hidden; }
 .pi-card-head { display: flex; gap: 20px; align-items: center; padding: 24px 24px 18px; }
@@ -391,5 +492,6 @@ h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
   section { padding: 52px 0; }
   .hero { padding: 56px 0 170px; }
   .page-hero { padding: 44px 0 40px; }
+  .page-hero-overlap { padding-bottom: 88px; }
   .page-body { padding: 40px 0 56px; }
 }

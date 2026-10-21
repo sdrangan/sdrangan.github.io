@@ -4,6 +4,9 @@
 # To add yourself: copy a block below and fill it in. Drop a square-ish photo
 # into assets/images/members/ and point `photo` at it (path relative to
 # assets/images/). Everything except `name` is optional.
+#
+# `projects` lists the project pages you appear on, by file name in
+# _projects/ without the .md (e.g. ["hardware-co-design"]).
 # ---------------------------------------------------------------------------
 - name: "Haozhe Lei"
   role: "PhD Student"
@@ -36,6 +39,7 @@
   email: ""
   website: "https://sites.google.com/view/jayadevjoy"
   scholar: ""
+  projects: ["hardware-co-design"]
 
 - name: "Ali Rasteh"
   role: "PhD Student"

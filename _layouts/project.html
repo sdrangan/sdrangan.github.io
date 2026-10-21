@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="page-hero">
+<section class="page-hero{% if page.hero_overlap %} page-hero-overlap{% endif %}">
   <div class="container">
     <a class="eyebrow eyebrow-link" href="{{ '/research/' | relative_url }}">&larr; Research</a>
     <h1>{{ page.title }}</h1>

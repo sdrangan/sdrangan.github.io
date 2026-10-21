@@ -1,0 +1,15 @@
+{% comment %}Group members whose `projects` (in _data/members.yml) include this project.{% endcomment %}
+{% assign url_parts = page.url | split: '/' %}
+{% for part in url_parts %}{% if part != '' %}{% assign slug = part %}{% endif %}{% endfor %}
+<div class="people">
+{% for m in site.data.members %}{% if m.projects contains slug %}
+  <div class="person">
+    <img class="avatar" src="{% if m.photo and m.photo != '' %}{{ m.photo | prepend: '/assets/images/' | relative_url }}{% else %}{{ '/assets/images/placeholder-person.svg' | relative_url }}{% endif %}" alt="{{ m.name }}">
+    <div>
+      <h4>{% if m.website and m.website != '' %}<a href="{{ m.website }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</h4>
+      {% if m.role and m.role != '' %}<span class="role-badge">{{ m.role }}</span>{% endif %}
+      {% if m.interests and m.interests != '' %}<p>{{ m.interests }}</p>{% endif %}
+    </div>
+  </div>
+{% endif %}{% endfor %}
+</div>
