@@ -101,7 +101,7 @@ investigators:
 </div>
 
 <p class="section-label section-gap">Team</p>
-<h2>Investigators</h2>
+<h2 id="investigators">Investigators</h2>
 <p class="team-note">All investigators are with the Department of Electrical and Computer Engineering, NYU Tandon School of Engineering, and NYU WIRELESS.</p>
 
 <div class="pi-grid">
