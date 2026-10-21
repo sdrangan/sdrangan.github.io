@@ -1,0 +1,85 @@
+---
+layout: default
+permalink: /
+---
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">NYU WIRELESS &middot; NYU Tandon School of Engineering</span>
+    <h1>Rangan Research Group</h1>
+    <p class="tagline">Wireless communications, signal processing &amp; hardware co-design for next-generation networks</p>
+    <p class="lede">We are the research group of Prof. Sundeep Rangan in the Department of Electrical and Computer Engineering at NYU Tandon. Current work spans upper mid-band (FR3) large-scale arrays, satellite-terrestrial co-existence, and algorithm-hardware co-design.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Our research</a>
+      <a class="btn btn-ghost" href="{{ '/group/' | relative_url }}">Meet the group</a>
+      <a class="btn btn-ghost" href="{{ '/publications/' | relative_url }}">Publications &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- Projects, overlapping the hero -->
+<div class="container overlap">
+  <div class="overlap-head">
+    <p class="section-label">Current research</p>
+    <a href="{{ '/research/' | relative_url }}">All projects &rarr;</a>
+  </div>
+  <div class="project-grid">
+    {% assign projects = site.projects | sort: "order" %}
+    {% for p in projects %}
+      {% include project-card.html project=p %}
+    {% endfor %}
+  </div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <div class="container two-col">
+    <div class="about-text">
+      <p class="section-label">About the group</p>
+      <h2>Next-generation wireless, from theory to hardware</h2>
+      <p>We are part of <a href="http://wireless.engineering.nyu.edu/">NYU WIRELESS</a>, an academic-industry research center researching next-generation wireless systems. Our work spans <strong>wireless communications, signal processing, information theory, and control theory</strong>.</p>
+      <p>Current efforts focus on the <strong>upper mid-band (FR3)</strong>: spectrally agile large-scale arrays, co-existence between terrestrial and satellite networks, channel measurements and sensing, and agentic tools for <strong>algorithm-hardware co-design</strong>.</p>
+      <div class="keywords">
+        <span>Upper mid-band (FR3)</span><span>Large-scale arrays</span><span>Satellite-terrestrial co-existence</span><span>Anti-jamming</span><span>Channel measurements</span><span>Hardware co-design</span>
+      </div>
+    </div>
+    <aside class="card pi-card">
+      <div class="pi-card-head">
+        <img src="{{ '/assets/images/sundeep-rangan.jpg' | relative_url }}" alt="Sundeep Rangan">
+        <div>
+          <p class="section-label" style="margin-bottom:4px">Principal investigator</p>
+          <h3>Sundeep Rangan</h3>
+          <p>Professor, ECE, NYU Tandon<br>Director, NYU WIRELESS</p>
+        </div>
+      </div>
+      <div class="pi-card-body">
+        <ul>
+          <li>Fellow of the IEEE</li>
+          <li>Co-founder of Flarion Technologies (Flash OFDM), acquired by Qualcomm</li>
+          <li>Ph.D., University of California, Berkeley</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="{{ '/group/' | relative_url }}">Full bio</a>
+          <a class="btn btn-outline" href="mailto:{{ site.contact.email }}">Email</a>
+          <a class="btn btn-outline" href="{{ site.contact.scholar }}">Google Scholar</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- News -->
+<section class="section-alt" id="news">
+  <div class="container">
+    <p class="section-label">News</p>
+    <h2>Latest updates</h2>
+    <ul class="news-list">
+      {% for item in site.data.news %}
+      <li class="news-item">
+        <time>{{ item.date }}</time>
+        <p>{{ item.text }}{% if item.link %} <a href="{{ item.link | relative_url }}">{{ item.link_label | default: "Read more" }} &rarr;</a>{% endif %}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

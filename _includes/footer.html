@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        {% if site.branding.logo_white and site.branding.logo_white != '' %}
+        <img class="footer-logo" src="{{ site.branding.logo_white | relative_url }}" alt="NYU">
+        {% endif %}
+        <h4>{{ site.title }}</h4>
+        <p>{{ site.branding.footer_blurb }}</p>
+        <p><a href="{{ site.contact.nyu_wireless }}">NYU WIRELESS</a> &middot; <a href="https://engineering.nyu.edu/">NYU Tandon</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+        <p>{{ site.contact.office }}</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          {% for item in site.data.navigation.main %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; {{ 'now' | date: '%Y' }} {{ site.title }} &middot; New York University</div>
+  </div>
+</footer>

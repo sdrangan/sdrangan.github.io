@@ -4,7 +4,6 @@ order: 3
 summary: "Joint design of algorithms and hardware for efficient next-generation wireless transceivers."
 sponsor: "NSF CISE Core (2024)"
 thumbnail: ""
-toc: true
 ---
 
 ## Overview

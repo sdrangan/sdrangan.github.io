@@ -1,0 +1,27 @@
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+      {% if site.branding.logo and site.branding.logo != '' %}
+      <img class="brand-logo" src="{{ site.branding.logo | relative_url }}" alt="NYU">
+      <span class="brand-divider" aria-hidden="true"></span>
+      {% else %}
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M2 12c2-6 4-6 6 0s4 6 6 0 4-6 6 0"/></svg></span>
+      {% endif %}
+      <span class="brand-text"><span class="brand-name">{{ site.title }}</span><span class="brand-sub">{{ site.branding.tagline }}</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      {% for item in site.data.navigation.main %}
+        {% assign current = false %}
+        {% if item.url == '/' %}
+          {% if page.url == '/' or page.url == '/index.html' %}{% assign current = true %}{% endif %}
+        {% elsif page.url contains item.url %}
+          {% assign current = true %}
+        {% endif %}
+      <li><a href="{{ item.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</header>

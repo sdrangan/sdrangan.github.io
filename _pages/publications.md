@@ -1,13 +1,10 @@
 ---
 title: "Publications"
 permalink: /publications/
-author_profile: false
-toc: false
+intro: "A complete and up-to-date list of publications is maintained on Google Scholar."
 ---
 
-A complete and up-to-date list of publications is maintained on Google Scholar.
-
-[View all publications on Google Scholar](https://scholar.google.com/citations?user=fzSHXS8AAAAJ&hl=en&oi=ao){: .btn .btn--primary .btn--large}
+[View all publications on Google Scholar](https://scholar.google.com/citations?user=fzSHXS8AAAAJ&hl=en&oi=ao){: .btn .btn-primary}
 
 ## Selected Recent Papers
 

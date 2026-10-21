@@ -1,0 +1,12 @@
+{% assign p = include.project %}
+<a class="project-card" href="{{ p.url | relative_url }}">
+  {% if p.thumbnail and p.thumbnail != '' %}
+  <img class="project-thumb" src="{{ p.thumbnail | relative_url }}" alt="">
+  {% endif %}
+  <div class="project-body">
+    {% if p.sponsor and p.sponsor != '' %}<span class="tag">{{ p.sponsor }}</span>{% endif %}
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.summary }}</p>
+    <span class="more">Learn more &rarr;</span>
+  </div>
+</a>

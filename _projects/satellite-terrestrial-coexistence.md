@@ -4,7 +4,6 @@ order: 2
 summary: "Detection, channel estimation, interference nulling, and anti-jamming for shared terrestrial and satellite operation in the upper mid-band."
 sponsor: ""
 thumbnail: ""
-toc: true
 ---
 
 ## Overview

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container">
+    <a class="eyebrow eyebrow-link" href="{{ '/research/' | relative_url }}">&larr; Research</a>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
+    {% if page.sponsor and page.sponsor != '' %}<p class="hero-meta">Supported by {{ page.sponsor }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container prose prose-narrow">
+{{ content }}
+  </div>
+</section>

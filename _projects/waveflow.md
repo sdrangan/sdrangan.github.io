@@ -4,7 +4,6 @@ order: 4
 summary: "A Python-based, agentic framework for automated algorithm-hardware co-design of wireless systems."
 sponsor: ""
 thumbnail: ""
-toc: true
 ---
 
 ## Overview
@@ -15,7 +14,7 @@ across the algorithm and hardware stack for wireless systems.
 
 ## Documentation
 
-- [WaveFlow documentation](https://sdrangan.github.io/waveflow/docs/){: .btn .btn--primary}
+- [WaveFlow documentation](https://sdrangan.github.io/waveflow/docs/){: .btn .btn-primary}
 
 ## People
 

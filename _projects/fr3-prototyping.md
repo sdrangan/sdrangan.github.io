@@ -4,7 +4,6 @@ order: 5
 summary: "Hardware prototyping, channel measurement campaigns, and integrated sensing in the upper mid-band (FR3)."
 sponsor: ""
 thumbnail: ""
-toc: true
 ---
 
 ## Overview

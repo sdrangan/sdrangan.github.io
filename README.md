@@ -2,9 +2,8 @@
 
 Source for [sdrangan.github.io](https://sdrangan.github.io) — the lab homepage of
 Prof. Sundeep Rangan (NYU Tandon / NYU WIRELESS). Built with
-[Jekyll](https://jekyllrb.com/) and the
-[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, hosted on
-GitHub Pages.
+[Jekyll](https://jekyllrb.com/) using a small custom theme in the NYU colors
+(layouts in `_layouts/`, styles in `assets/css/style.css`), hosted on GitHub Pages.
 
 ## Editing content (no coding required)
 
@@ -18,7 +17,9 @@ directly on GitHub and the site rebuilds automatically.
 | News items | [`_data/news.yml`](_data/news.yml) |
 | Courses (Teaching) | [`_data/courses.yml`](_data/courses.yml) |
 | Top menu | [`_data/navigation.yml`](_data/navigation.yml) |
-| Bio / home page | [`index.md`](index.md) |
+| Home page | [`index.html`](index.html) |
+| PI bio | [`_pages/group.md`](_pages/group.md) |
+| Logo, contact info in footer | [`_config.yml`](_config.yml) |
 | A project page | the matching file in [`_projects/`](_projects/) |
 | Publications page | [`_pages/publications.md`](_pages/publications.md) |
 

@@ -4,7 +4,6 @@ order: 1
 summary: "Designing large-scale antenna arrays that operate flexibly across the upper mid-band (FR3) spectrum."
 sponsor: "NTIA (NOFO-1 and NOFO-2)"
 thumbnail: ""   # e.g. /assets/images/projects/spectrally-agile-arrays.jpg
-toc: true
 ---
 
 ## Overview

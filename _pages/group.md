@@ -1,18 +1,17 @@
 ---
 title: "Group"
 permalink: /group/
-author_profile: false
-toc: true
-toc_label: "On this page"
-toc_sticky: true
+eyebrow: "People"
+intro: "PhD students, researchers, and alumni of the Rangan Research Group at NYU Tandon and NYU WIRELESS."
+wide: true
 ---
-
-## Sundeep Rangan
 
 <div class="pi-profile">
   <img class="pi-photo" src="{{ '/assets/images/sundeep-rangan.jpg' | relative_url }}" alt="Sundeep Rangan">
   <div class="pi-bio" markdown="1">
-Professor, ECE, NYU Tandon School of Engineering &middot; Director, [NYU WIRELESS](http://wireless.engineering.nyu.edu/)
+<p class="section-label">Principal investigator</p>
+<h2 class="pi-title">Sundeep Rangan</h2>
+<p class="pi-role">Professor, ECE, NYU Tandon School of Engineering &middot; Director, <a href="http://wireless.engineering.nyu.edu/">NYU WIRELESS</a></p>
 
 Sundeep Rangan received the B.A.Sc. at the University of Waterloo, Canada and the
 M.Sc. and Ph.D. at the University of California, Berkeley, all in Electrical
@@ -29,7 +28,8 @@ Director of NYU WIRELESS, an academic-industry research center researching
 next-generation wireless systems. His research interests are in wireless
 communications, signal processing, information theory and control theory.
 
-[Email](mailto:srangan@nyu.edu) &middot; [Google Scholar](https://scholar.google.com/citations?user=fzSHXS8AAAAJ&hl=en&oi=ao)
+[Email](mailto:srangan@nyu.edu){: .btn .btn-primary}
+[Google Scholar](https://scholar.google.com/citations?user=fzSHXS8AAAAJ&hl=en&oi=ao){: .btn .btn-outline}
   </div>
 </div>
 
@@ -37,23 +37,21 @@ communications, signal processing, information theory and control theory.
 
 <div class="member-grid">
 {% for m in site.data.members %}
-  <div class="member-card">
+  <article class="member-card">
     {% if m.website and m.website != '' %}<a href="{{ m.website }}">{% endif %}
     <img class="member-photo"
          src="{% if m.photo and m.photo != '' %}{{ m.photo | prepend: '/assets/images/' | relative_url }}{% else %}{{ '/assets/images/placeholder-person.svg' | relative_url }}{% endif %}"
          alt="{{ m.name }}">
     {% if m.website and m.website != '' %}</a>{% endif %}
-    <div class="member-info">
-      <h3 class="member-name">{{ m.name }}</h3>
-      {% if m.role and m.role != '' %}<p class="member-role">{{ m.role }}</p>{% endif %}
-      {% if m.interests and m.interests != '' %}<p class="member-interests">{{ m.interests }}</p>{% endif %}
-      <p class="member-links">
-        {% if m.email and m.email != '' %}<a href="mailto:{{ m.email }}">Email</a>{% endif %}
-        {% if m.website and m.website != '' %}{% if m.email and m.email != '' %} &middot; {% endif %}<a href="{{ m.website }}">Website</a>{% endif %}
-        {% if m.scholar and m.scholar != '' %} &middot; <a href="{{ m.scholar }}">Scholar</a>{% endif %}
-      </p>
-    </div>
-  </div>
+    <h3 class="member-name">{% if m.website and m.website != '' %}<a href="{{ m.website }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</h3>
+    {% if m.role and m.role != '' %}<span class="role-badge">{{ m.role }}</span>{% endif %}
+    {% if m.interests and m.interests != '' %}<p class="member-interests">{{ m.interests }}</p>{% endif %}
+    <p class="member-links">
+      {% if m.email and m.email != '' %}<a href="mailto:{{ m.email }}">Email</a>{% endif %}
+      {% if m.website and m.website != '' %}{% if m.email and m.email != '' %} &middot; {% endif %}<a href="{{ m.website }}">Website</a>{% endif %}
+      {% if m.scholar and m.scholar != '' %} &middot; <a href="{{ m.scholar }}">Scholar</a>{% endif %}
+    </p>
+  </article>
 {% endfor %}
 </div>
 
@@ -74,4 +72,4 @@ communications, signal processing, information theory and control theory.
 ---
 
 *Group members: to update your entry, edit [`_data/members.yml`](https://github.com/sdrangan/sdrangan.github.io/blob/main/_data/members.yml) and add a photo to `assets/images/members/`. See the comments at the top of that file.*
-{: .notice}
+{: .note}
