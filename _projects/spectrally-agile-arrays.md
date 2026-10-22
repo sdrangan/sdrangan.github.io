@@ -7,28 +7,7 @@ thumbnail: "/assets/images/projects/salsa/overview.svg"
 thumbnail_fit: contain
 wide: true
 hero_overlap: true
-# Photos: path relative to assets/images/. Leave "" to show initials.
-investigators:
-  - name: "Sundeep Rangan"
-    role: "PI"
-    photo: "sundeep-rangan.jpg"
-    bio: "NYU. Project lead; system architecture, scalable array processing, and co-existence algorithms."
-  - name: "Hamed Rahmani"
-    role: "Co-PI"
-    photo: ""
-    bio: "NYU. Spectrally agile receiver RFIC design."
-  - name: "Kaushik Sengupta"
-    role: "Co-PI"
-    photo: ""
-    bio: "Princeton. Wideband transmitter and power amplifier RFIC design."
-  - name: "Ivan Seskar"
-    role: "Co-PI"
-    photo: ""
-    bio: "Rutgers WINLAB. Integration into the COSMOS O-RAN testbed."
-  - name: "Aditya Dhananjay"
-    role: "Pi-Radio"
-    photo: ""
-    bio: "NYU spin-off Pi-Radio. FR3 SDRs, RFIC packaging, and the modular MIMO platform."
+site_nav: salsa
 ---
 
 <div class="stat-strip">
@@ -179,26 +158,9 @@ investigators:
 </div>
 
 <p class="section-label section-gap">Team</p>
-<h2 id="investigators">Investigators</h2>
-<p class="team-note">SALSA is led by NYU with Princeton, Rutgers, and the NYU spin-off Pi-Radio, together with industry partners Nokia (system evaluation) and Analog Devices (O-RU interface).</p>
+<h2>Who we are</h2>
+<p class="team-note">SALSA is led by NYU with Princeton, Rutgers WINLAB, and the NYU spin-off Pi-Radio, together with industry partners Nokia and Analog Devices.</p>
 
-<div class="pi-grid">
-{% for inv in page.investigators %}
-  <div class="pi-mini">
-    {% if inv.photo and inv.photo != '' %}
-    <img class="avatar" src="{{ inv.photo | prepend: '/assets/images/' | relative_url }}" alt="{{ inv.name }}">
-    {% else %}
-    {% assign parts = inv.name | split: ' ' %}
-    <span class="avatar avatar-initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
-    {% endif %}
-    <h4>{{ inv.name }}</h4>
-    <span class="role-badge{% if inv.role == 'PI' %} lead{% endif %}">{{ inv.role }}</span>
-    <p>{{ inv.bio }}</p>
-  </div>
-{% endfor %}
-</div>
-
-<h3 class="students-head">Students</h3>
-{% include project-members.html %}
+<a class="btn btn-primary" href="{{ '/research/spectrally-agile-arrays/team/' | relative_url }}">Meet the team &rarr;</a>
 
 <p class="ack">This work is supported by the National Telecommunications and Information Administration (NTIA) Public Wireless Supply Chain Innovation Fund under awards 36-60-IF003 (NOFO-1) and 36-60-IF2419 (NOFO-2). Any opinions, findings, and conclusions or recommendations expressed are those of the authors and do not necessarily reflect the views of NTIA.</p>

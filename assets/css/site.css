@@ -386,12 +386,30 @@ h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
 .person .role-badge { margin: 4px 0 4px; }
 .prose .person p { margin: 0; font-size: 14px; line-height: 1.45; }
 
+.prose .pi-mini .pi-aff { margin: 4px 0 8px; font-size: 13.5px; font-weight: 600; color: var(--violet); }
+
+/* Partner organizations (project team pages) */
+.thrusts.orgs { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.orgs .thrust { padding: 24px 22px 20px; }
+.prose .orgs .thrust h3 { font-size: 19px; margin: 6px 0 8px; }
+.prose .orgs .thrust > p { margin: 0; font-size: 14.5px; }
+@media (max-width: 960px) { .thrusts.orgs { grid-template-columns: repeat(2, 1fr); } }
+
+/* Tab bar for projects with sub-pages */
+.subnav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.subnav a {
+  padding: 7px 16px; border-radius: 999px; font-size: 14px; font-weight: 700; text-decoration: none;
+  color: #fff; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .25);
+}
+.subnav a:hover { background: rgba(255, 255, 255, .22); color: #fff; }
+.subnav a.active { background: #fff; color: var(--violet); border-color: #fff; }
+
 .prose .related { margin-top: 40px; }
 .prose .ack { margin-top: 28px; font-size: 13px; color: var(--muted); line-height: 1.55; }
 
 @media (max-width: 960px) { .pi-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 760px) {
-  .thrusts { grid-template-columns: 1fr; }
+  .thrusts, .thrusts.orgs { grid-template-columns: 1fr; }
   .stat-strip, .prose > .stat-strip:first-child { margin-top: -72px; }
   .stat { padding: 20px 8px 16px; }
   .stat-label { font-size: 11px; letter-spacing: .06em; }

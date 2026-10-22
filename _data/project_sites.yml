@@ -1,0 +1,8 @@
+# Tab bars for projects that have their own sub-pages.
+# A page opts in with `site_nav: <key>` in its front matter; the tab whose
+# url matches the page is highlighted. Add a line here for each new sub-page.
+salsa:
+  - title: "Home"
+    url: /research/spectrally-agile-arrays/
+  - title: "Team"
+    url: /research/spectrally-agile-arrays/team/

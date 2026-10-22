@@ -1,6 +1,9 @@
-{% comment %}Group members whose `projects` (in _data/members.yml) include this project.{% endcomment %}
+{% comment %}Group members whose `projects` (in _data/members.yml) include this project.
+Pass slug= when the page is a sub-page (e.g. a project's team page).{% endcomment %}
+{% if include.slug %}{% assign slug = include.slug %}{% else %}
 {% assign url_parts = page.url | split: '/' %}
 {% for part in url_parts %}{% if part != '' %}{% assign slug = part %}{% endif %}{% endfor %}
+{% endif %}
 <div class="people">
 {% for m in site.data.members %}{% if m.projects contains slug %}
   <div class="person">

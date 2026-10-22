@@ -3,7 +3,7 @@
 Source for [sdrangan.github.io](https://sdrangan.github.io) — the lab homepage of
 Prof. Sundeep Rangan (NYU Tandon / NYU WIRELESS). Built with
 [Jekyll](https://jekyllrb.com/) using a small custom theme in the NYU colors
-(layouts in `_layouts/`, styles in `assets/css/style.css`), hosted on GitHub Pages.
+(layouts in `_layouts/`, styles in `assets/css/site.css`), hosted on GitHub Pages.
 
 ## Editing content (no coding required)
 

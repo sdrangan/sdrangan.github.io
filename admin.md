@@ -47,4 +47,6 @@ Maintenance notes for the group website. This file is not published on the site.
 
    If a page suddenly shows up unstyled (plain blue links, huge images), the
    browser reloaded while Jekyll was mid-rebuild. Hard refresh with
-   **Ctrl+Shift+R**.
+   **Ctrl+Shift+R**. Keep our stylesheet named `assets/css/site.css`: the
+   `github-pages` gem's default theme generates its own `assets/css/style.css`,
+   which would overwrite a file of that name.
