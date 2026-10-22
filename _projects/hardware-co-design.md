@@ -1,5 +1,6 @@
 ---
 title: "Hardware-Algorithm Co-Design"
+short: "Co-Design"   # tag on the Publications page
 order: 3
 featured: true
 summary: "Energy-efficient, reconfigurable wireless networks built from low-power, approximate, non-linear, and noisy components."
@@ -100,6 +101,11 @@ investigators:
     </ul>
   </article>
 </div>
+
+<p class="section-label section-gap">Publications</p>
+<h2>Selected papers</h2>
+
+{% include pub-list.html project="hardware-co-design" %}
 
 <p class="section-label section-gap">Team</p>
 <h2 id="investigators">Investigators</h2>

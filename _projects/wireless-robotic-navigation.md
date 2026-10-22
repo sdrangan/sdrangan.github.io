@@ -1,5 +1,6 @@
 ---
 title: "Wireless-Aided Robotic Navigation"
+short: "Robotics"   # tag on the Publications page
 order: 6
 summary: "Robots that localize radio sources and navigate with wireless signals, from probabilistic RF localization to a 10-GHz robotic testbed."
 sponsor: ""
@@ -80,6 +81,10 @@ validate everything on a **10-GHz robotic testbed** in the upper mid-band (FR3).
 </div>
 
 <p class="credit">Figures and video courtesy of Haozhe Lei.</p>
+
+## Publications
+
+{% include pub-list.html project="wireless-robotic-navigation" %}
 
 ## People
 

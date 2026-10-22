@@ -1,5 +1,6 @@
 ---
 title: "FR3 Prototyping, Channel Measurements & Sensing"
+short: "Prototyping"   # tag on the Publications page
 order: 5
 summary: "Hardware prototyping, channel measurement campaigns, and integrated sensing in the upper mid-band (FR3)."
 sponsor: ""
@@ -95,15 +96,7 @@ testbed** that ties every RF measurement to a precise position.
 
 ## Publications
 
-- M. Mezzavilla, A. Dhananjay, M. Zappe, and S. Rangan, "A Frequency Hopping
-  Software-Defined Radio Platform for Communications and Sensing in the Upper
-  Mid-Band," *IEEE SPAWC*, Lucca, Italy, 2024.
-- M. Mezzavilla, A. Rasteh, M. Zappe, E. Zappe, A. Dhananjay, and S. Rangan,
-  "6G Prototyping in the Upper Mid-Band (7&ndash;24 GHz)," *IEEE WCNC*, Milan,
-  Italy, 2025.
-- R. Bomfin, A. Rasteh, A. Bazzi, H. Guo, H. Lee, M. Mezzavilla, S. Rangan,
-  J. Choi, and M. Chafii, "Multi-Band Channel Sensing in the Upper Mid-Band
-  (FR3)," *IEEE GLOBECOM*, 2025.
+{% include pub-list.html project="fr3-prototyping" %}
 
 ## People
 

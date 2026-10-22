@@ -1,5 +1,6 @@
 ---
 title: "SALSA: Spectrally Agile Large-Scale Arrays"
+short: "SALSA"   # tag on the Publications page
 order: 1
 featured: true
 summary: "Wideband, frequency-agile RFICs and tileable massive MIMO radios for the upper mid-band (FR3), built as an Open Radio Unit."
@@ -157,6 +158,11 @@ site_nav: salsa
   </article>
 
 </div>
+
+<p class="section-label section-gap">Publications</p>
+<h2>Selected papers</h2>
+
+{% include pub-list.html project="spectrally-agile-arrays" %}
 
 <p class="section-label section-gap">Team</p>
 <h2>Who we are</h2>

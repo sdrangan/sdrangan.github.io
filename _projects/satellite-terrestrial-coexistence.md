@@ -1,5 +1,6 @@
 ---
 title: "Satellite-Terrestrial Co-Existence"
+short: "Satellite"   # tag on the Publications page
 order: 4
 summary: "Detection, channel estimation, interference nulling, and anti-jamming for shared terrestrial and satellite operation in the upper mid-band."
 sponsor: ""
@@ -66,14 +67,7 @@ orbital geometries.
 
 ## Publications
 
-- S. Jia, M. Ying, M. Mezzavilla, D. Calin, T. S. Rappaport, and S. Rangan,
-  "Joint Detection, Channel Estimation and Interference Nulling for
-  Terrestrial-Satellite Downlink Co-Existence in the Upper Mid-Band," *IEEE
-  GLOBECOM*, 2025. [arXiv:2510.08824](https://arxiv.org/abs/2510.08824)
-- S. Jia, M. Ying, M. Mezzavilla, T. S. Rappaport, and S. Rangan, "Distributed
-  Uplink Anti-Jamming in LEO Mega-Constellations via Game-Theoretic
-  Beamforming," *IEEE ICC*, 2026.
-  [arXiv:2601.15557](https://arxiv.org/abs/2601.15557)
+{% include pub-list.html project="satellite-terrestrial-coexistence" %}
 
 ## People
 

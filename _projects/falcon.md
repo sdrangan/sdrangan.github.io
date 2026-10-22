@@ -1,5 +1,6 @@
 ---
 title: "FALCON: Flexible Aerial Links for Control, Observation, and Navigation"
+short: "FALCON"   # tag on the Publications page
 order: 2
 featured: true
 summary: "Resilient FR3 connectivity for aerial robots, from lightweight spectrally agile transceivers to multipath transport, validated in outdoor flights on the NSF AERPAW testbed."

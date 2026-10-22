@@ -1,0 +1,34 @@
+{% comment %}
+Curated papers from _data/publications.yml, in the order given, one citation per line.
+  project="slug"  list the papers tagged with that project (file order), or
+  pubs=list       list exactly these papers;
+  tags=true       end each citation with project pills (short names from _projects/*.md).
+{% endcomment %}
+{%- if include.project -%}
+{%- assign pub_project = include.project -%}
+{%- assign pubs = site.data.publications | where_exp: "p", "p.projects contains pub_project" -%}
+{%- else -%}
+{%- assign pubs = include.pubs -%}
+{%- endif -%}
+{% if pubs.size > 0 %}
+<ol class="pub-list">
+{% for p in pubs %}
+  <li class="pub">
+    {{ p.authors }}, <a class="pub-title" href="{{ p.url }}">{{ p.title }}</a>, <span class="pub-venue">{{ p.venue }}</span>, {{ p.year }}.
+    {%- if p.arxiv and p.arxiv != '' %}{% unless p.url contains 'arxiv.org' %} <a class="pub-link" href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endunless %}{% endif %}
+    {%- if p.code and p.code != '' %} <a class="pub-link" href="{{ p.code }}">Code</a>{% endif %}
+    {%- if include.tags -%}
+    {%- for slug in p.projects -%}
+    {%- assign tag_doc = site.projects | where_exp: "d", "d.url contains slug" | first -%}
+    {%- if tag_doc -%}
+    {%- if tag_doc.external_url and tag_doc.external_url != '' -%}{%- assign tag_href = tag_doc.external_url -%}{%- else -%}{%- assign tag_href = tag_doc.url | relative_url -%}{%- endif %} <a class="pub-tag" href="{{ tag_href }}">{{ tag_doc.short | default: tag_doc.title }}</a>
+    {%- endif -%}
+    {%- endfor -%}
+    {%- endif %}
+    {% if p.note and p.note != '' %}<p class="pub-note">{{ p.note }}</p>{% endif %}
+  </li>
+{% endfor %}
+</ol>
+{% else %}
+<p class="empty-state">Selected papers coming soon.</p>
+{% endif %}

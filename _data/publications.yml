@@ -1,0 +1,201 @@
+# Curated publications shown on the website (not a full list; see Google Scholar).
+#
+# Each paper appears on every project page named in `projects`, and under those
+# projects on the Publications page, in the order listed in this file. Put the
+# paper a reader should start with first.
+#
+# Project names are the ends of the project page URLs:
+#   spectrally-agile-arrays, satellite-terrestrial-coexistence, fr3-prototyping,
+#   hardware-co-design, wireless-robotic-navigation, falcon, waveflow
+#
+# Required: title, authors, venue, year, url, projects
+# Optional: arxiv (shown as a link when url is not already arXiv), code, note
+# Quote arXiv IDs so they stay text, e.g. arxiv: "2309.03038".
+
+# ---------- Upper mid-band systems and SALSA ----------
+
+- title: "Cellular Wireless Networks in the Upper Mid-Band"
+  authors: "S. Kang, M. Mezzavilla, S. Rangan, A. Madanayake, S. B. Venkatakrishnan, G. Hellbourg, M. Ghosh, H. Rahmani, A. Dhananjay"
+  venue: "IEEE Open Journal of the Communications Society"
+  year: 2024
+  url: https://doi.org/10.1109/OJCOMS.2024.3373368
+  arxiv: "2309.03038"
+  projects: [spectrally-agile-arrays, satellite-terrestrial-coexistence]
+  note: "Start here. One of the first studies of cellular networks in the upper mid-band, and for several months among IEEE's 50 most-downloaded papers. It makes the case for wideband, spectrally agile FR3 systems through multi-band ray tracing, a satellite interference analysis, and a compact multi-band array design."
+
+- title: "Upper Mid-Band Spectrum for 6G: Vision, Opportunity and Challenges"
+  authors: "A. Bazzi, R. Bomfin, M. Mezzavilla, S. Rangan, T. S. Rappaport, M. Chafii"
+  venue: "IEEE Communications Magazine"
+  year: 2025
+  url: https://doi.org/10.1109/MCOM.001.2500101
+  arxiv: "2502.17914"
+  projects: [spectrally-agile-arrays]
+
+- title: "Terrestrial-Satellite Spectrum Sharing in the Upper Mid-Band with Interference Nulling"
+  authors: "S. Kang, G. Geraci, M. Mezzavilla, S. Rangan"
+  venue: "IEEE ICC"
+  year: 2024
+  url: https://doi.org/10.1109/ICC51166.2024.10622881
+  arxiv: "2311.12965"
+  projects: [spectrally-agile-arrays, satellite-terrestrial-coexistence]
+  note: "One of the first studies of terrestrial-satellite spectrum sharing in the upper mid-band. It shows that base stations can steer nulls toward satellites, keeping interference to satellite uplinks below protection limits with negligible loss to terrestrial users."
+
+- title: "Interference-Tolerant Mixer-First Receivers for FR3: Design Principles and Tradeoffs"
+  authors: "R. Nikandish, H. Rahmani"
+  venue: "arXiv preprint"
+  year: 2026
+  url: https://arxiv.org/abs/2608.22647
+  projects: [spectrally-agile-arrays, hardware-co-design]
+
+- title: "Spectrum Sharing and Spatial Isolation for 5G Cellular Networks and Military Radars in the FR1 Frequency Bands"
+  authors: "C. N. Barati, A. Dhananjay, M. Zappe, P. Marques, L. Pereira, R. Magueta, S. Rangan, K. Gold, S. A. Hawkins, S. Shetty"
+  venue: "IEEE MILCOM"
+  year: 2025
+  url: https://doi.org/10.1109/MILCOM64451.2025.11310615
+  projects: [fr3-prototyping, falcon, spectrally-agile-arrays]
+
+# ---------- Satellite-terrestrial co-existence ----------
+
+- title: "Joint Detection, Channel Estimation and Interference Nulling for Terrestrial-Satellite Downlink Co-Existence in the Upper Mid-Band"
+  authors: "S. Jia, M. Ying, M. Mezzavilla, D. Calin, T. S. Rappaport, S. Rangan"
+  venue: "IEEE GLOBECOM"
+  year: 2025
+  url: https://doi.org/10.1109/GLOBECOM59602.2025.11432307
+  arxiv: "2510.08824"
+  projects: [satellite-terrestrial-coexistence]
+
+- title: "Distributed Uplink Anti-Jamming in LEO Mega-Constellations via Game-Theoretic Beamforming"
+  authors: "S. Jia, M. Ying, M. Mezzavilla, T. S. Rappaport, S. Rangan"
+  venue: "IEEE ICC"
+  year: 2026
+  url: https://doi.org/10.1109/ICC59461.2026.11586786
+  arxiv: "2601.15557"
+  code: https://github.com/SJ00425/NTN-Anti-Jamming
+  projects: [satellite-terrestrial-coexistence]
+
+# ---------- FR3 prototyping, measurements and sensing ----------
+
+- title: "A Frequency Hopping Software-Defined Radio Platform for Communications and Sensing in the Upper Mid-Band"
+  authors: "M. Mezzavilla, A. Dhananjay, M. Zappe, S. Rangan"
+  venue: "IEEE SPAWC"
+  year: 2024
+  url: https://doi.org/10.1109/SPAWC60668.2024.10694319
+  projects: [fr3-prototyping, spectrally-agile-arrays]
+
+- title: "6G Prototyping in the Upper Mid-Band (7–24 GHz)"
+  authors: "M. Mezzavilla, A. Rasteh, M. Zappe, E. Zappe, A. Dhananjay, S. Rangan"
+  venue: "IEEE WCNC"
+  year: 2025
+  url: https://doi.org/10.1109/WCNC61545.2025.10978617
+  projects: [fr3-prototyping]
+
+- title: "Multi-Band Channel Sensing in the Upper Mid-Band (FR3)"
+  authors: "R. Bomfin, A. Rasteh, A. Bazzi, H. Guo, H. Lee, M. Mezzavilla, S. Rangan, J. Choi, M. Chafii"
+  venue: "IEEE GLOBECOM"
+  year: 2025
+  url: https://doi.org/10.1109/GLOBECOM59602.2025.11432428
+  code: https://github.com/ali-rasteh/RFSoC_SDR
+  projects: [fr3-prototyping]
+
+- title: "JUMP: Joint Communication and Sensing With Unsynchronized Transceivers Made Practical"
+  authors: "J. Pegoraro, J. O. Lacruz, T. Azzino, M. Mezzavilla, M. Rossi, J. Widmer, S. Rangan"
+  venue: "IEEE Transactions on Wireless Communications"
+  year: 2024
+  url: https://doi.org/10.1109/TWC.2024.3365853
+  arxiv: "2304.07766"
+  projects: [fr3-prototyping]
+
+- title: "Open-Access Millimeter-Wave Software-Defined Radios in the PAWR COSMOS Testbed: Design, Deployment, and Experimentation"
+  authors: "T. Chen, P. Maddala, P. Skrimponis, J. Kolodziejski, A. Adhikari, H. Hu, Z. Gao, A. Paidimarri, A. Valdes-Garcia, M. J. Lee, S. Rangan, G. Zussman, I. Seskar"
+  venue: "Computer Networks"
+  year: 2023
+  url: https://doi.org/10.1016/j.comnet.2023.109922
+  projects: [fr3-prototyping]
+
+# ---------- Hardware-algorithm co-design ----------
+
+- title: "A Spatial Array for Spectrally Agile Wireless Processing"
+  authors: "A. Rasteh, A. Hennessee, I. Shivhare, S. Garg, S. Rangan, B. Reagen"
+  venue: "Asilomar Conference on Signals, Systems, and Computers"
+  year: 2025
+  url: https://doi.org/10.1109/IEEECONF67917.2025.11443932
+  arxiv: "2512.04182"
+  projects: [hardware-co-design]
+
+- title: "Computationally Efficient Signal Detection With Unknown Bandwidths"
+  authors: "A. Rasteh, S. Rangan"
+  venue: "IEEE Open Journal of the Communications Society"
+  year: 2026
+  url: https://doi.org/10.1109/OJCOMS.2026.3656868
+  arxiv: "2504.09342"
+  projects: [hardware-co-design]
+
+- title: "TRACER, the Next Generation Ultra-Wideband Spectrum Processor"
+  authors: "M. French, J. P. Walters, K. M. Zick, A. J. Rittenbach, C. Imes, D.-I. Kang, A. Schmidt, A. Rasteh, S. Rangan, B. Reagen, M. A. McHenry, I. Akbar"
+  venue: "IEEE MILCOM"
+  year: 2025
+  url: https://doi.org/10.1109/MILCOM64451.2025.11310646
+  projects: [hardware-co-design]
+
+- title: "Performance Optimization of Resource-Constrained Wireless Receiver Front-Ends with Power-Centric Design Approaches"
+  authors: "D. Wong, A. Padmanathan, H. Rahmani"
+  venue: "IEEE WiSNeT"
+  year: 2025
+  url: https://doi.org/10.1109/WiSNeT63956.2025.10905015
+  projects: [hardware-co-design, spectrally-agile-arrays]
+
+# ---------- Wireless-aided robotic navigation ----------
+
+- title: "LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins"
+  authors: "H. Lei, R. Bomfin, M. Chafii, S. Rangan"
+  venue: "arXiv preprint"
+  year: 2026
+  url: https://arxiv.org/abs/2608.00406
+  projects: [wireless-robotic-navigation]
+
+- title: "Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization"
+  authors: "H. Lei, H. Guo, T. Svensson, S. Rangan"
+  venue: "Asilomar Conference on Signals, Systems, and Computers"
+  year: 2026
+  # Presented Nov 2026; switch url to the IEEE Xplore DOI once the proceedings are published.
+  url: https://arxiv.org/abs/2509.25719
+  projects: [wireless-robotic-navigation]
+
+- title: "MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band"
+  authors: "H. Lei, R. Chen, Y. Jiang, A. Rasteh, A. Dhananjay, S. Rangan"
+  venue: "arXiv preprint"
+  year: 2026
+  url: https://arxiv.org/abs/2609.20670
+  projects: [wireless-robotic-navigation]
+
+- title: "MAPLE-RF: Efficient Probabilistic RF Source Localization in Partially Explored Environments"
+  authors: "H. Lei, S. Rangan"
+  venue: "arXiv preprint"
+  year: 2026
+  url: https://arxiv.org/abs/2609.21026
+  projects: [wireless-robotic-navigation]
+
+- title: "Digital Twin-Enhanced Wireless Indoor Navigation: Achieving Efficient Environment Sensing With Zero-Shot Reinforcement Learning"
+  authors: "T. Li, H. Lei, H. Guo, M. Yin, Y. Hu, Q. Zhu, S. Rangan"
+  venue: "IEEE Open Journal of the Communications Society"
+  year: 2025
+  url: https://doi.org/10.1109/OJCOMS.2025.3552277
+  arxiv: "2306.06766"
+  projects: [wireless-robotic-navigation]
+
+- title: "Zero-Shot Wireless Indoor Navigation through Physics-Informed Reinforcement Learning"
+  authors: "M. Yin, T. Li, H. Lei, Y. Hu, S. Rangan, Q. Zhu"
+  venue: "IEEE ICRA"
+  year: 2024
+  url: https://doi.org/10.1109/ICRA57147.2024.10611229
+  projects: [wireless-robotic-navigation]
+
+# ---------- FALCON ----------
+
+- title: "Spatially Consistent Air-to-Ground Channel Modeling via Generative Neural Networks"
+  authors: "A. Giuliani, R. Nikbakht, G. Geraci, S. Kang, A. Lozano, S. Rangan"
+  venue: "IEEE Wireless Communications Letters"
+  year: 2024
+  url: https://doi.org/10.1109/LWC.2024.3363653
+  arxiv: "2402.03517"
+  projects: [falcon]
