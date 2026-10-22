@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-labelledby="t d">
+  <title id="t">Satellite-terrestrial co-existence</title>
+  <desc id="d">Three LEO satellites connected by inter-satellite links serve a VSAT terminal on the ground. A terrestrial base station beamforms to a smartphone, while its emissions also reach the VSAT terminal and the satellites as interference.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eee6f3"/>
+      <stop offset=".7" stop-color="#fbf9fc"/>
+    </linearGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2d4ec"/>
+      <stop offset=".25" stop-color="#f3edf7"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" x2="1">
+      <stop offset="0" stop-color="#8900e1" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#8900e1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="downbeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8900e1" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#8900e1" stop-opacity=".02"/>
+    </linearGradient>
+    <marker id="a-want" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#57068c"/>
+    </marker>
+    <marker id="a-int" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#d7336c"/>
+    </marker>
+    <clipPath id="frame"><rect width="640" height="460" rx="14"/></clipPath>
+
+    <!-- Satellite, centered on its bus -->
+    <g id="sat">
+      <path d="M-14 0H-10M10 0H14" stroke="#330662" stroke-width="2.5"/>
+      <rect x="-44" y="-8" width="30" height="16" rx="2" fill="#fff" stroke="#57068c" stroke-width="2"/>
+      <path d="M-34 -8V8M-24 -8V8M-44 0H-14" stroke="#c9b3d9" stroke-width="1.5"/>
+      <rect x="14" y="-8" width="30" height="16" rx="2" fill="#fff" stroke="#57068c" stroke-width="2"/>
+      <path d="M24 -8V8M34 -8V8M14 0H44" stroke="#c9b3d9" stroke-width="1.5"/>
+      <rect x="-10" y="-11" width="20" height="22" rx="4" fill="#57068c"/>
+      <rect x="-5" y="-6" width="10" height="5" rx="1" fill="#8900e1"/>
+      <path d="M0 11V15M-7 15Q0 23 7 15Z" fill="#330662" stroke="#330662" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <style>
+    text { font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .lbl { font-size: 14px; font-weight: 700; fill: #330662; }
+    .sub { font-size: 12px; font-weight: 600; fill: #6d6578; }
+    .want { stroke: #57068c; stroke-width: 2.5; fill: none; }
+    .int { stroke: #d7336c; stroke-width: 2.5; fill: none; stroke-dasharray: 8 6; }
+    .isl { stroke: #8900e1; stroke-width: 2; fill: none; stroke-dasharray: 2 6; stroke-linecap: round; }
+    .leg { font-size: 12.5px; font-weight: 600; fill: #4a4257; }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="640" height="460" fill="url(#sky)"/>
+
+    <!-- Orbit -->
+    <circle cx="320" cy="1400" r="1340" fill="none" stroke="#c9b3d9" stroke-width="1.5" stroke-dasharray="3 7"/>
+
+    <!-- Earth with atmosphere glow -->
+    <circle cx="320" cy="1400" r="1107" fill="none" stroke="#c9b3d9" stroke-opacity=".3" stroke-width="14"/>
+    <circle cx="320" cy="1400" r="1100" fill="url(#earth)" stroke="#c9b3d9" stroke-width="2"/>
+
+    <!-- Beams -->
+    <path d="M120 92L118 300L190 296Z" fill="url(#downbeam)"/>
+    <path d="M402 236L520 262L522 322Z" fill="url(#beam)"/>
+
+    <!-- Inter-satellite links -->
+    <path class="isl" d="M166 72Q220 58 272 60"/>
+    <path class="isl" d="M368 60Q420 58 474 72"/>
+
+    <!-- Desired links -->
+    <path class="want" d="M122 96L147 266" marker-end="url(#a-want)"/>
+    <path class="want" d="M408 240L500 288" marker-end="url(#a-want)"/>
+
+    <!-- Interference / jamming -->
+    <path class="int" d="M396 228L330 94" marker-end="url(#a-int)"/>
+    <path class="int" d="M406 228L510 104" marker-end="url(#a-int)"/>
+    <path class="int" d="M388 246L180 282" marker-end="url(#a-int)"/>
+
+    <!-- Satellites -->
+    <use href="#sat" transform="translate(120 76) rotate(-9)"/>
+    <use href="#sat" transform="translate(320 58)"/>
+    <use href="#sat" transform="translate(520 76) rotate(9)"/>
+    <text class="lbl" x="320" y="30" text-anchor="middle">LEO satellites</text>
+    <text class="sub" x="420" y="92" text-anchor="middle">inter-satellite links</text>
+
+    <!-- VSAT terminal (ground at y≈313) -->
+    <g>
+      <rect x="138" y="304" width="24" height="10" rx="2" fill="#330662"/>
+      <path d="M150 304V288" stroke="#330662" stroke-width="4" stroke-linecap="round"/>
+      <g transform="translate(150 284) rotate(-12)">
+        <path d="M-24 -6Q0 22 24 -6Z" fill="#57068c"/>
+        <path d="M-10 4L0 -20M10 4L0 -20" stroke="#330662" stroke-width="2"/>
+        <circle cx="0" cy="-21" r="3.5" fill="#330662"/>
+      </g>
+    </g>
+    <text class="lbl" x="150" y="342" text-anchor="middle">VSAT terminal</text>
+
+    <!-- Base station (ground at y≈303) -->
+    <g stroke="#330662" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M386 304L400 238L414 304"/>
+      <path d="M390 286H410M393 270H407M396 254H404M390 286L407 270M410 286L393 270M393 270L404 254M407 270L396 254"/>
+    </g>
+    <rect x="384" y="226" width="9" height="24" rx="2" fill="#57068c"/>
+    <rect x="407" y="226" width="9" height="24" rx="2" fill="#57068c"/>
+    <path d="M374 218a24 24 0 0 1 0-20M367 224a34 34 0 0 1 0-32M426 218a24 24 0 0 0 0-20M433 224a34 34 0 0 0 0-32" stroke="#8900e1" stroke-width="2.5" stroke-linecap="round" fill="none" transform="translate(0 20)"/>
+    <text class="lbl" x="400" y="330" text-anchor="middle">Base station</text>
+
+    <!-- Smartphone (ground at y≈318) -->
+    <rect x="510" y="276" width="24" height="42" rx="5" fill="#fff" stroke="#330662" stroke-width="3"/>
+    <rect x="515" y="283" width="14" height="24" rx="1.5" fill="#eee6f3"/>
+    <path d="M519 312H525" stroke="#330662" stroke-width="2.5" stroke-linecap="round"/>
+    <text class="lbl" x="522" y="340" text-anchor="middle">Mobile user</text>
+
+    <!-- Legend -->
+    <g transform="translate(70 404)">
+      <path class="want" d="M0 0H34"/>
+      <text class="leg" x="44" y="4.5">Desired link</text>
+      <path class="int" d="M150 0H184"/>
+      <text class="leg" x="194" y="4.5">Interference / jamming</text>
+      <path class="isl" d="M362 0H396"/>
+      <text class="leg" x="406" y="4.5">Inter-satellite link</text>
+    </g>
+  </g>
+</svg>
