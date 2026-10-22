@@ -1,12 +1,12 @@
 # ---------------------------------------------------------------------------
 # Site settings
 # ---------------------------------------------------------------------------
-title: "Rangan Research Group"
-subtitle: "Wireless Communications, Signal Processing & Hardware Co-Design"
-tagline: "Wireless Communications, Signal Processing & Hardware Co-Design"  # used in the home page browser-tab title
+title: "TORCH Lab"
+subtitle: "Transceivers, Optimization, Radios & Co-design in Hardware"
+tagline: "Transceivers, Optimization, Radios & Co-design in Hardware"  # used in the home page browser-tab title
 name: "Sundeep Rangan"
 description: >-
-  Research group of Prof. Sundeep Rangan at NYU Tandon / NYU WIRELESS, working on
+  TORCH Lab, the research group of Prof. Sundeep Rangan at NYU Tandon / NYU WIRELESS, working on
   next-generation wireless systems: upper mid-band (FR3) arrays, satellite-terrestrial
   co-existence, and algorithm-hardware co-design.
 url: "https://sdrangan.github.io"
@@ -16,7 +16,7 @@ repository: "sdrangan/sdrangan.github.io"
 # Branding (header, footer)
 # ---------------------------------------------------------------------------
 branding:
-  tagline: "NYU WIRELESS · NYU Tandon"
+  tagline: "Rangan Group · NYU WIRELESS"
   # NYU torch logo (files in assets/images/nyu/; "long" versions spell out
   # NEW YORK UNIVERSITY). `logo` is shown in the white header, `logo_white`
   # in the violet footer. Leave "" to hide.

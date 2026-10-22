@@ -1,4 +1,4 @@
-# Rangan Research Group website
+# TORCH Lab website
 
 Source for [sdrangan.github.io](https://sdrangan.github.io) — the lab homepage of
 Prof. Sundeep Rangan (NYU Tandon / NYU WIRELESS). Built with

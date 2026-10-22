@@ -1,4 +1,4 @@
-/* Rangan Research Group — NYU color theme (adapted from the FALCON project site) */
+/* TORCH Lab (Rangan group) — NYU color theme (adapted from the FALCON project site) */
 :root {
   --violet: #57068c;        /* NYU Violet */
   --violet-deep: #330662;   /* Deep violet */
@@ -116,6 +116,8 @@ a:hover { color: var(--violet-ultra); }
   font-family: var(--font-display); font-size: clamp(20px, 2.4vw, 26px);
   margin: 0 0 20px; color: #f1e6fa; max-width: 760px; line-height: 1.35;
 }
+.hero .tagline b { color: #fff; font-weight: 700; }
+.hero h1 { letter-spacing: .02em; }
 .hero .lede { font-size: 17.5px; max-width: 700px; color: rgba(255, 255, 255, .86); margin: 0 0 32px; }
 
 /* ---------- Buttons ---------- */

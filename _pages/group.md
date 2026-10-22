@@ -2,7 +2,7 @@
 title: "Group"
 permalink: /group/
 eyebrow: "People"
-intro: "PhD students, researchers, and alumni of the Rangan Research Group at NYU Tandon and NYU WIRELESS."
+intro: "PhD students, researchers, and alumni of TORCH Lab at NYU Tandon and NYU WIRELESS."
 wide: true
 ---
 
