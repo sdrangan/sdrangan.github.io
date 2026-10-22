@@ -11,50 +11,67 @@ organizations:
     type: "University · Lead"
     role: "Project lead. Receiver RFIC, system architecture, scalable array processing, O-RU integration, and co-existence algorithms."
   - name: "Princeton"
-    type: "University"
+    type: "University · NOFO-2"
     role: "Wideband transmitter and power amplifier RFICs."
   - name: "Rutgers WINLAB"
-    type: "Testbed"
+    type: "Testbed · NOFO-2"
     role: "Deployment and trials in the COSMOS O-RAN testbed in New York City."
   - name: "Pi-Radio"
     type: "Start-up"
     role: "NYU spin-off. FR3 software-defined radios, RFIC packaging, and the modular MIMO platform."
   - name: "Nokia"
-    type: "Industry"
+    type: "Industry · NOFO-2"
     role: "System-level capacity evaluation, spectrum studies, and standards."
   - name: "Analog Devices"
-    type: "Industry"
+    type: "Industry · NOFO-2"
     role: "O-RU interface platform for integration into O-RAN networks."
   - name: "FIU"
     type: "University · NOFO-1"
     role: "Adaptive null-forming and integrated sensing arrays in FR3."
 # Photos: path relative to assets/images/. Leave "" to show initials.
+# awards: which NTIA awards the person works on (shown as badges).
 investigators:
   - name: "Sundeep Rangan"
-    role: "PI"
+    lead: true
     affiliation: "NYU"
+    awards: ["NOFO-1", "NOFO-2"]
     photo: "sundeep-rangan.jpg"
-    bio: "Project lead; system architecture, scalable array processing, and co-existence algorithms."
+    bio: "Lead PI on both awards; system architecture, scalable array processing, and co-existence algorithms."
   - name: "Hamed Rahmani"
-    role: "Co-PI"
     affiliation: "NYU"
+    awards: ["NOFO-1", "NOFO-2"]
     photo: ""
     bio: "Spectrally agile receiver RFIC design."
-  - name: "Kaushik Sengupta"
-    role: "Co-PI"
-    affiliation: "Princeton"
-    photo: ""
-    bio: "Wideband transmitter and power amplifier RFIC design."
-  - name: "Ivan Seskar"
-    role: "Co-PI"
-    affiliation: "Rutgers WINLAB"
-    photo: ""
-    bio: "Integration into the COSMOS O-RAN testbed."
   - name: "Aditya Dhananjay"
-    role: "Partner"
     affiliation: "Pi-Radio"
+    awards: ["NOFO-1", "NOFO-2"]
     photo: ""
     bio: "FR3 SDRs, RFIC packaging, and the modular MIMO platform."
+  - name: "Arjuna Madanayake"
+    affiliation: "FIU"
+    awards: ["NOFO-1"]
+    photo: ""
+    bio: "Adaptive null-forming and integrated sensing arrays in FR3."
+  - name: "Marco Mezzavilla"
+    affiliation: "Politecnico di Milano"
+    awards: ["NOFO-1"]
+    photo: ""
+    bio: "Frequency-hopping FR3 SDR platform and multi-band system design."
+  - name: "Ivan Seskar"
+    affiliation: "Rutgers WINLAB"
+    awards: ["NOFO-2"]
+    photo: ""
+    bio: "Integration into the COSMOS O-RAN testbed."
+  - name: "Kaushik Sengupta"
+    affiliation: "Princeton"
+    awards: ["NOFO-2"]
+    photo: ""
+    bio: "Wideband transmitter and power amplifier RFIC design."
+  - name: "Jinfeng Du"
+    affiliation: "Nokia"
+    awards: ["NOFO-2"]
+    photo: ""
+    bio: "System-level evaluation, spectrum studies, and standards."
 ---
 
 <p class="section-label">People &amp; partners</p>
@@ -73,6 +90,7 @@ investigators:
 
 <p class="section-label section-gap">Project personnel</p>
 <h2 id="investigators">Investigators</h2>
+<p class="team-note"><strong>NOFO-1</strong>: Testing for Open, Secure and Adaptive Spectrum Sharing in FR3 (2023&ndash;2028). <strong>NOFO-2</strong>: Spectrally Agile and Scalable Open Radio Units for the Upper Mid-Band (2025&ndash;2030).</p>
 
 <div class="pi-grid">
 {% for inv in page.investigators %}
@@ -84,8 +102,11 @@ investigators:
     <span class="avatar avatar-initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
     {% endif %}
     <h4>{{ inv.name }}</h4>
-    <span class="role-badge{% if inv.role == 'PI' %} lead{% endif %}">{{ inv.role }}</span>
     <p class="pi-aff">{{ inv.affiliation }}</p>
+    <div class="award-badges">
+      {% if inv.lead %}<span class="role-badge lead">Lead PI</span>{% endif %}
+      {% for a in inv.awards %}<span class="role-badge">{{ a }}</span>{% endfor %}
+    </div>
     <p>{{ inv.bio }}</p>
   </div>
 {% endfor %}
