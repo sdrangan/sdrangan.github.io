@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 510" role="img" aria-labelledby="t d">
+  <title id="t">SALSA overview</title>
+  <desc id="d">SALSA targets 6 to 15 GHz within the upper mid-band (FR3), between sub-6 GHz FR1 with better coverage and mmWave FR2 with more spectrum. Four project tasks: spectrally agile RFICs, modular MIMO platforms, an O-RU and O-RAN testbed, and end-to-end demonstrations. Commercial opportunities: public cellular, commercial satellite, defense communications, and academic and industry research labs.</desc>
+
+  <defs>
+    <linearGradient id="band" x1="0" x2="1">
+      <stop offset="0" stop-color="#f3f0f6"/>
+      <stop offset=".286" stop-color="#e6dbef"/>
+      <stop offset=".714" stop-color="#e6dbef"/>
+      <stop offset="1" stop-color="#f3f0f6"/>
+    </linearGradient>
+    <linearGradient id="salsa" x1="0" x2="1">
+      <stop offset="0" stop-color="#57068c"/>
+      <stop offset="1" stop-color="#8900e1"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#8a4fb8"/>
+    </marker>
+    <clipPath id="c1"><rect x="60" y="246" width="195" height="136" rx="12"/></clipPath>
+    <clipPath id="c2"><rect x="275" y="246" width="195" height="136" rx="12"/></clipPath>
+    <clipPath id="c3"><rect x="490" y="246" width="195" height="136" rx="12"/></clipPath>
+    <clipPath id="c4"><rect x="705" y="246" width="195" height="136" rx="12"/></clipPath>
+  </defs>
+
+  <style>
+    text { font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .band-title { font-size: 16px; font-weight: 700; fill: #4a4257; }
+    .band-title.fr3 { fill: #57068c; }
+    .band-sub { font-size: 13px; fill: #6d6578; }
+    .tick { stroke: #8a4fb8; stroke-width: 1.5; }
+    .tick-lbl { font-size: 12.5px; font-weight: 600; fill: #6d6578; }
+    .dir { stroke: #8a4fb8; stroke-width: 2; fill: none; }
+    .dir-lbl { font-size: 13px; font-weight: 600; fill: #4a4257; }
+    .section { font-size: 11.5px; font-weight: 800; letter-spacing: 2px; fill: #8900e1; }
+    .card { fill: #fff; stroke: #e4dde9; stroke-width: 1.2; }
+    .icon-bg { fill: #eee6f3; }
+    .icon { fill: none; stroke: #57068c; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .task-num { font-size: 11px; font-weight: 800; letter-spacing: 1.6px; fill: #8900e1; }
+    .task-title { font-size: 16.5px; font-weight: 700; fill: #330662; }
+    .task-sub { font-size: 12.5px; fill: #6d6578; }
+    .chev { fill: none; stroke: #c9b3d9; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .pill { fill: #f7f4f9; stroke: #c9b3d9; stroke-width: 1.2; }
+    .pill-lbl { font-size: 13px; font-weight: 700; fill: #330662; }
+  </style>
+
+  <!-- ===== Spectrum band ===== -->
+  <text class="band-title" x="180" y="38" text-anchor="middle">FR1 · sub-6 GHz</text>
+  <text class="band-sub" x="180" y="58" text-anchor="middle">Traditional cellular</text>
+  <text class="band-title fr3" x="480" y="38" text-anchor="middle">FR3 · Upper mid-band</text>
+  <text class="band-sub" x="480" y="58" text-anchor="middle">Balance of spectrum &amp; coverage</text>
+  <text class="band-title" x="780" y="38" text-anchor="middle">FR2 · mmWave</text>
+  <text class="band-sub" x="780" y="58" text-anchor="middle">Introduced in 5G</text>
+
+  <path d="M300 80V70H660V80" fill="none" stroke="#c9b3d9" stroke-width="2"/>
+  <rect x="60" y="90" width="840" height="40" rx="20" fill="url(#band)"/>
+  <rect x="300" y="90" width="360" height="40" fill="none" stroke="#c9b3d9" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <rect x="300" y="82" width="220" height="56" rx="10" fill="url(#salsa)"/>
+  <text x="410" y="107" text-anchor="middle" font-size="18" font-weight="800" fill="#fff" letter-spacing="1">SALSA</text>
+  <text x="410" y="127" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff" fill-opacity=".85">this project · 6–15 GHz</text>
+
+  <path class="tick" d="M300 142v8M520 142v8M660 134v16"/>
+  <text class="tick-lbl" x="300" y="166" text-anchor="middle">6 GHz</text>
+  <text class="tick-lbl" x="520" y="166" text-anchor="middle">15 GHz</text>
+  <text class="tick-lbl" x="660" y="166" text-anchor="middle">24 GHz</text>
+
+  <text class="dir-lbl" x="160" y="186" text-anchor="middle">Better coverage</text>
+  <path class="dir" d="M250 196H74" marker-end="url(#arrow)"/>
+  <text class="dir-lbl" x="800" y="186" text-anchor="middle">More spectrum</text>
+  <path class="dir" d="M710 196H886" marker-end="url(#arrow)"/>
+
+  <!-- ===== Project tasks ===== -->
+  <text class="section" x="60" y="232">PROJECT TASKS</text>
+
+  <g>
+    <rect class="card" x="60" y="246" width="195" height="136" rx="12"/>
+    <rect x="60" y="246" width="195" height="5" fill="url(#salsa)" clip-path="url(#c1)"/>
+    <circle class="icon-bg" cx="90" cy="280" r="19"/>
+    <g class="icon" transform="translate(76.8 266.8) scale(1.1)"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></g>
+    <text class="task-num" x="120" y="285">TASK 1</text>
+    <text class="task-title" x="76" y="320">Spectrally agile</text>
+    <text class="task-title" x="76" y="340">RFICs</text>
+    <text class="task-sub" x="76" y="366">6–15 GHz · fast hopping</text>
+  </g>
+  <path class="chev" d="M262 308l6 6-6 6"/>
+
+  <g>
+    <rect class="card" x="275" y="246" width="195" height="136" rx="12"/>
+    <rect x="275" y="246" width="195" height="5" fill="url(#salsa)" clip-path="url(#c2)"/>
+    <circle class="icon-bg" cx="305" cy="280" r="19"/>
+    <g class="icon" transform="translate(291.8 266.8) scale(1.1)"><rect x="3" y="3" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1"/></g>
+    <text class="task-num" x="335" y="285">TASK 2</text>
+    <text class="task-title" x="291" y="320">Modular MIMO</text>
+    <text class="task-title" x="291" y="340">platforms</text>
+    <text class="task-sub" x="291" y="366">Tileable 8-channel modules</text>
+  </g>
+  <path class="chev" d="M477 308l6 6-6 6"/>
+
+  <g>
+    <rect class="card" x="490" y="246" width="195" height="136" rx="12"/>
+    <rect x="490" y="246" width="195" height="5" fill="url(#salsa)" clip-path="url(#c3)"/>
+    <circle class="icon-bg" cx="520" cy="280" r="19"/>
+    <g class="icon" transform="translate(506.8 266.8) scale(1.1)"><path d="M12 10v12M8 22l4-12 4 12"/><circle cx="12" cy="8" r="1.5"/><path d="M7.8 4.2a6 6 0 0 0 0 7.6M16.2 4.2a6 6 0 0 1 0 7.6"/></g>
+    <text class="task-num" x="550" y="285">TASK 3</text>
+    <text class="task-title" x="506" y="320">O-RU &amp; O-RAN</text>
+    <text class="task-title" x="506" y="340">testbed</text>
+    <text class="task-sub" x="506" y="366">COSMOS, New York City</text>
+  </g>
+  <path class="chev" d="M692 308l6 6-6 6"/>
+
+  <g>
+    <rect class="card" x="705" y="246" width="195" height="136" rx="12"/>
+    <rect x="705" y="246" width="195" height="5" fill="url(#salsa)" clip-path="url(#c4)"/>
+    <circle class="icon-bg" cx="735" cy="280" r="19"/>
+    <g class="icon" transform="translate(721.8 266.8) scale(1.1)"><path d="M2 12h4l3-7 4 14 3-7h6"/></g>
+    <text class="task-num" x="765" y="285">TASK 4</text>
+    <text class="task-title" x="721" y="320">End-to-end</text>
+    <text class="task-title" x="721" y="340">demonstrations</text>
+    <text class="task-sub" x="721" y="366">Sharing &amp; anti-jamming</text>
+  </g>
+
+  <!-- ===== Commercial opportunities ===== -->
+  <text class="section" x="60" y="418">COMMERCIAL OPPORTUNITIES</text>
+
+  <rect class="pill" x="60" y="432" width="195" height="54" rx="27"/>
+  <circle cx="88" cy="459" r="17" fill="#fff"/>
+  <g class="icon" transform="translate(77 448) scale(.92)"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></g>
+  <text class="pill-lbl" x="114" y="464">Public cellular</text>
+
+  <rect class="pill" x="275" y="432" width="195" height="54" rx="27"/>
+  <circle cx="303" cy="459" r="17" fill="#fff"/>
+  <g class="icon" transform="translate(292 448) scale(.92)"><g transform="rotate(-45 12 12)"><rect x="9.5" y="8.5" width="5" height="7" rx="1"/><rect x="1.5" y="9.5" width="6" height="5"/><rect x="16.5" y="9.5" width="6" height="5"/><path d="M7.5 12h2M14.5 12h2"/></g></g>
+  <text class="pill-lbl" x="329" y="455">Commercial</text>
+  <text class="pill-lbl" x="329" y="472">satellite</text>
+
+  <rect class="pill" x="490" y="432" width="195" height="54" rx="27"/>
+  <circle cx="518" cy="459" r="17" fill="#fff"/>
+  <g class="icon" transform="translate(507 448) scale(.92)"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/></g>
+  <text class="pill-lbl" x="544" y="455">Defense</text>
+  <text class="pill-lbl" x="544" y="472">communications</text>
+
+  <rect class="pill" x="705" y="432" width="195" height="54" rx="27"/>
+  <circle cx="733" cy="459" r="17" fill="#fff"/>
+  <g class="icon" transform="translate(722 448) scale(.92)"><path d="M9 2h6M10 2v6l-5 10a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-10V2M7.5 15h9"/></g>
+  <text class="pill-lbl" x="759" y="455">Academic &amp;</text>
+  <text class="pill-lbl" x="759" y="472">industry labs</text>
+</svg>
