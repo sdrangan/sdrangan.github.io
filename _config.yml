@@ -16,11 +16,12 @@ repository: "sdrangan/sdrangan.github.io"
 # Branding (header, footer)
 # ---------------------------------------------------------------------------
 branding:
-  tagline: "Rangan Group · NYU WIRELESS"
-  # NYU torch logo (files in assets/images/nyu/; "long" versions spell out
-  # NEW YORK UNIVERSITY). `logo` is shown in the white header, `logo_white`
-  # in the violet footer. Leave "" to hide.
-  logo: "/assets/images/nyu/nyu-short-color.svg"
+  tagline: "Rangan Group · NYU Tandon"
+  # `logo` is shown in the white header (NYU WIRELESS logo), `logo_white` in
+  # the violet footer (NYU torch; files in assets/images/nyu/, where "long"
+  # versions spell out NEW YORK UNIVERSITY). Leave "" to hide.
+  logo: "/assets/images/nyu-wireless/nyu-wireless-color.jpg"
+  logo_alt: "NYU WIRELESS"
   logo_white: "/assets/images/nyu/nyu-short-white.svg"
   footer_blurb: >-
     Part of NYU WIRELESS and the Department of Electrical and Computer

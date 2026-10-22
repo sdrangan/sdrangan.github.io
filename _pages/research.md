@@ -6,9 +6,4 @@ intro: "Our research centers on next-generation wireless systems. Click any proj
 wide: true
 ---
 
-<div class="project-grid">
-{% assign projects = site.projects | sort: "order" %}
-{% for p in projects %}
-  {% include project-card.html project=p %}
-{% endfor %}
-</div>
+{% include project-groups.html %}

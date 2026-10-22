@@ -1,6 +1,7 @@
 ---
 title: "Hardware-Algorithm Co-Design"
 order: 3
+featured: true
 summary: "Energy-efficient, reconfigurable wireless networks built from low-power, approximate, non-linear, and noisy components."
 sponsor: "NSF CNS-2504400"
 thumbnail: "/assets/images/projects/hardware-co-design/new-regime.png"

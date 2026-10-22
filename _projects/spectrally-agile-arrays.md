@@ -1,6 +1,7 @@
 ---
 title: "SALSA: Spectrally Agile Large-Scale Arrays"
 order: 1
+featured: true
 summary: "Wideband, frequency-agile RFICs and tileable massive MIMO radios for the upper mid-band (FR3), built as an Open Radio Unit."
 sponsor: "NTIA Innovation Fund (NOFO-1 & 2)"
 thumbnail: "/assets/images/projects/salsa/overview.svg"

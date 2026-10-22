@@ -20,15 +20,10 @@ permalink: /
 <!-- Projects, overlapping the hero -->
 <div class="container overlap">
   <div class="overlap-head">
-    <p class="section-label">Current research</p>
+    <p class="section-label">Sponsored programs</p>
     <a href="{{ '/research/' | relative_url }}">All projects &rarr;</a>
   </div>
-  <div class="project-grid">
-    {% assign projects = site.projects | sort: "order" %}
-    {% for p in projects %}
-      {% include project-card.html project=p %}
-    {% endfor %}
-  </div>
+  {% include project-groups.html skip_first_label=true %}
 </div>
 
 <!-- About -->

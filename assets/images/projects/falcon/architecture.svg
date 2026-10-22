@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" role="img" aria-labelledby="archTitle archDesc">
+  <title id="archTitle">FALCON system architecture</title>
+  <desc id="archDesc">UAVs with spectrally agile transceivers, multipath TCP clients and network-aware autonomy connect over shared FR3 spectrum to a FALCON radio access network and to non-FALCON networks such as public 5G and satellite. A FALCON RIC coordinates spectrum, and cloud servers provide multipath transport and offloaded control, navigation and perception.</desc>
+  <defs>
+    <linearGradient id="spec" x1="0" x2="1">
+      <stop offset="0" stop-color="#c9b3d9"/><stop offset=".55" stop-color="#8900e1"/><stop offset="1" stop-color="#57068c"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .grp{fill:#f7f4f9;stroke:#c9b3d9;stroke-width:1.5}
+    .ex{fill:#fff;stroke:#b9a3cc;stroke-width:1.3}
+    .nw{fill:#57068c}
+    .t{font:500 12.5px Inter,system-ui,sans-serif;fill:#1d1626}
+    .tb{font:700 13px Inter,system-ui,sans-serif;fill:#1d1626}
+    .tw{font:600 12.5px Inter,system-ui,sans-serif;fill:#fff}
+    .tws{font:500 11.5px Inter,system-ui,sans-serif;fill:#eadcf5}
+    .h{font:800 11.5px Inter,system-ui,sans-serif;fill:#57068c;letter-spacing:.1em}
+    .s{font:500 11.5px Inter,system-ui,sans-serif;fill:#6d6578}
+    .lk{fill:none;stroke:#57068c;stroke-width:2}
+    .lk2{fill:none;stroke:#b9a3cc;stroke-width:2}
+    .wl{fill:none;stroke:#8900e1;stroke-width:2.2;stroke-dasharray:6 5}
+    .wl2{fill:none;stroke:#b9a3cc;stroke-width:2;stroke-dasharray:6 5}
+    .ic{fill:none;stroke:#57068c;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .c{text-anchor:middle}
+  </style>
+
+  <!-- links (drawn first, behind the boxes) -->
+  <path class="wl2" d="M230 252 C 290 252, 285 71, 340 71"/>
+  <path class="wl" d="M230 270 L330 262"/>
+  <path class="lk2" d="M560 71 C 615 71, 615 114, 670 114"/>
+  <path class="lk" d="M570 241 H598 M644 241 H670"/>
+  <path class="lk" d="M450 332 V304"/>
+  <path class="lk" d="M570 362 H770 V260"/>
+  <path class="lk2" d="M130 312 V334"/>
+  <path class="wl2" d="M105 366 L78 404 M155 366 L182 404"/>
+
+  <!-- UAV group -->
+  <rect class="grp" x="30" y="40" width="200" height="272" rx="14"/>
+  <g class="ic">
+    <path d="M53 57 L79 71 M79 57 L53 71"/>
+    <rect x="61" y="60" width="10" height="8" rx="2" fill="#57068c"/>
+    <ellipse cx="53" cy="57" rx="7" ry="2"/><ellipse cx="79" cy="57" rx="7" ry="2"/>
+    <ellipse cx="53" cy="71" rx="7" ry="2"/><ellipse cx="79" cy="71" rx="7" ry="2"/>
+  </g>
+  <text class="h" x="94" y="68">UAV &#183; FALCON UE</text>
+  <rect class="ex" x="44" y="92" width="172" height="44" rx="9"/>
+  <text class="t c" x="130" y="110">Embedded control,</text>
+  <text class="t c" x="130" y="125">navigation &amp; perception</text>
+  <rect class="nw" x="44" y="144" width="172" height="44" rx="9"/>
+  <text class="tw c" x="130" y="170">Network awareness</text>
+  <rect class="nw" x="44" y="196" width="172" height="44" rx="9"/>
+  <text class="tw c" x="130" y="222">Multipath TCP client</text>
+  <rect class="nw" x="44" y="248" width="172" height="48" rx="9"/>
+  <text class="tw c" x="130" y="267">Spectrally agile</text>
+  <text class="tw c" x="130" y="283">transceiver</text>
+
+  <!-- Ground robots via local link -->
+  <rect class="ex" x="60" y="334" width="140" height="32" rx="8"/>
+  <text class="t c" x="130" y="355">Local link</text>
+  <g class="ic">
+    <rect x="62" y="412" width="30" height="15" rx="3"/><rect x="71" y="405" width="12" height="7" rx="1.5"/>
+    <circle cx="68" cy="432" r="4"/><circle cx="77" cy="432" r="4"/><circle cx="86" cy="432" r="4"/>
+    <rect x="168" y="412" width="30" height="15" rx="3"/><rect x="177" y="405" width="12" height="7" rx="1.5"/>
+    <circle cx="174" cy="432" r="4"/><circle cx="183" cy="432" r="4"/><circle cx="192" cy="432" r="4"/>
+  </g>
+  <text class="s c" x="130" y="460">Ground robots</text>
+
+  <!-- Non-FALCON access -->
+  <rect class="ex" x="340" y="40" width="220" height="62" rx="12"/>
+  <g class="ic" transform="translate(368 71) rotate(-35)">
+    <rect x="-5" y="-5" width="10" height="10" rx="1.5"/>
+    <rect x="-19" y="-4" width="11" height="8"/><rect x="8" y="-4" width="11" height="8"/>
+    <path d="M0 5 V10"/>
+  </g>
+  <text class="tb" x="394" y="67">Non-FALCON access</text>
+  <text class="s" x="394" y="85">public 5G &#183; satellite</text>
+
+  <!-- Shared spectrum -->
+  <text class="s c" x="450" y="134">Shared spectrum &#183; FR3 (6&#8211;24 GHz)</text>
+  <rect x="340" y="143" width="220" height="12" rx="6" fill="url(#spec)"/>
+
+  <!-- FALCON RAN -->
+  <rect class="grp" x="330" y="178" width="240" height="126" rx="14" style="stroke:#57068c"/>
+  <g class="ic">
+    <path d="M346 214 L352 195 L358 214 M348.6 207 H355.4"/>
+    <circle cx="352" cy="193" r="1.6" fill="#57068c"/>
+    <path d="M345.5 189 Q352 183.5 358.5 189"/>
+  </g>
+  <text class="h" x="368" y="206">FALCON RAN</text>
+  <rect class="nw" x="344" y="222" width="104" height="66" rx="9"/>
+  <text class="tw c" x="396" y="244">Spectrally</text>
+  <text class="tw c" x="396" y="259">agile</text>
+  <text class="tw c" x="396" y="274">O-RU</text>
+  <rect class="ex" x="460" y="222" width="96" height="66" rx="9"/>
+  <text class="t c" x="508" y="259">O-CU / DU</text>
+
+  <!-- Core network -->
+  <rect class="ex" x="598" y="219" width="46" height="44" rx="9"/>
+  <text class="tb c" x="621" y="246">CN</text>
+
+  <!-- FALCON RIC -->
+  <rect class="nw" x="330" y="332" width="240" height="60" rx="12"/>
+  <text class="tw c" x="450" y="357" style="font-weight:800;letter-spacing:.06em">FALCON RIC</text>
+  <text class="tws c" x="450" y="375">spectrum coordination &amp; measurement</text>
+
+  <!-- Cloud / edge -->
+  <rect class="grp" x="670" y="40" width="200" height="220" rx="14"/>
+  <g class="ic">
+    <rect x="686" y="52" width="22" height="7" rx="1.5"/><rect x="686" y="61" width="22" height="7" rx="1.5"/><rect x="686" y="70" width="22" height="7" rx="1.5"/>
+  </g>
+  <text class="h" x="718" y="68">CLOUD &#183; EDGE</text>
+  <rect class="nw" x="684" y="92" width="172" height="44" rx="9"/>
+  <text class="tw c" x="770" y="118">Multipath TCP server</text>
+  <rect class="ex" x="684" y="144" width="172" height="44" rx="9"/>
+  <text class="t c" x="770" y="162">Cloud control,</text>
+  <text class="t c" x="770" y="177">navigation &amp; perception</text>
+  <rect class="nw" x="684" y="196" width="172" height="44" rx="9"/>
+  <text class="tw c" x="770" y="222">Network awareness</text>
+
+  <!-- Applications -->
+  <text class="h" x="250" y="420">TARGET APPLICATIONS &#183; DEMONSTRATED ON AERPAW</text>
+  <rect class="grp" x="250" y="430" width="300" height="92" rx="12" style="stroke:#e4dde9"/>
+  <rect x="266" y="447" width="58" height="58" rx="10" fill="#eee6f3"/>
+  <g class="ic">
+    <rect x="281" y="458" width="28" height="38" rx="1.5"/>
+    <path d="M287 465h4M299 465h4M287 473h4M299 473h4M287 481h4M299 481h4M292 496v-7h6v7"/>
+  </g>
+  <text class="h" x="338" y="456">APPLICATION 1</text>
+  <text class="tb" x="338" y="476">UAV-assisted infrastructure</text>
+  <text class="tb" x="338" y="492">inspection</text>
+  <text class="s" x="338" y="510">Partner: Tall Wall Robotics</text>
+
+  <rect class="grp" x="570" y="430" width="300" height="92" rx="12" style="stroke:#e4dde9"/>
+  <rect x="586" y="447" width="58" height="58" rx="10" fill="#eee6f3"/>
+  <g class="ic">
+    <path d="M597 460l10 6M607 460l-10 6M619 460l10 6M629 460l-10 6M608 481l10 6M618 481l-10 6"/>
+    <circle cx="602" cy="463" r="1.6" fill="#57068c"/><circle cx="624" cy="463" r="1.6" fill="#57068c"/><circle cx="613" cy="484" r="1.6" fill="#57068c"/>
+  </g>
+  <text class="h" x="658" y="456">APPLICATION 2</text>
+  <text class="tb" x="658" y="476">Resilient drone swarms</text>
+  <text class="tb" x="658" y="492">for defense</text>
+  <text class="s" x="658" y="510">Partner: Nexcepta</text>
+
+  <!-- Legend -->
+  <rect class="ex" x="250" y="547" width="14" height="14" rx="3"/>
+  <text class="s" x="271" y="558">Existing component</text>
+  <rect class="nw" x="410" y="547" width="14" height="14" rx="3"/>
+  <text class="s" x="431" y="558">New for FALCON</text>
+  <path class="wl" d="M550 554 H580"/>
+  <text class="s" x="588" y="558">Wireless link</text>
+  <path class="lk" d="M686 554 H716"/>
+  <text class="s" x="724" y="558">Wired / control</text>
+</svg>

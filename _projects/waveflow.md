@@ -1,6 +1,6 @@
 ---
 title: "WaveFlow: Agentic Algorithm-Hardware Co-Design"
-order: 4
+order: 7
 summary: "A Python-based, agentic framework for automated algorithm-hardware co-design of wireless systems."
 sponsor: ""
 thumbnail: "/assets/images/projects/waveflow/hero.svg"
