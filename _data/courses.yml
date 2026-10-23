@@ -1,9 +1,30 @@
 # ---------------------------------------------------------------------------
-# Courses. Each is just a link out to the course's own page.
-# Add `term` (optional) to note when it's offered.
+# Courses. Each is a card on the Teaching page linking out to the course's
+# own open-source material.
+# `thumbnail` (optional) is a path under /assets/images/; leave "" to show the
+# violet banner with `icon` (one of: chip, antenna, wave).
 # ---------------------------------------------------------------------------
-# - code: "ECE-XXXX"
-#   title: "Course Title"
-#   term: "Fall 2025"
-#   url: "https://example.com/course-page"
-#   description: "One-line description (optional)."
+- code: "ECE-GY 6463"
+  title: "Advanced Hardware Design"
+  term: "Spring 2026, Fall 2026"
+  url: "https://sdrangan.github.io/hwdesign/docs/"
+  url_label: "sdrangan.github.io/hwdesign"
+  thumbnail: "/assets/images/teaching/pynq-z2.png"
+  icon: "chip"
+  description: "Hardware design for students with no prior hardware experience: build accelerators with Vitis HLS, simulate them in Vivado and Python, and deploy them on FPGA boards through PYNQ."
+- code: "EL-GY 6013"
+  title: "Digital Communications"
+  term: "Spring 2025"
+  url: "https://github.com/sdrangan/digitalcomm"
+  url_label: "github.com/sdrangan/digitalcomm"
+  thumbnail: "/assets/images/teaching/qam16.png"
+  icon: "wave"
+  description: "Modulation, signal space, demodulation, synchronization, equalization, channel coding (convolutional and LDPC), and information theory, with MATLAB live scripts and software-defined radio labs."
+- code: "ECE-GY 6023"
+  title: "Introduction to Wireless Communications"
+  term: "Fall 2023"
+  url: "https://github.com/sdrangan/wirelesscomm"
+  url_label: "github.com/sdrangan/wirelesscomm"
+  thumbnail: "/assets/images/teaching/fading.svg"
+  icon: "antenna"
+  description: "Antennas, propagation, multipath fading, OFDM, channel estimation, beamforming, and MIMO, with MATLAB live scripts, NVIDIA Sionna notebooks, and SDR demos."
