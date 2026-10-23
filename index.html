@@ -62,19 +62,3 @@ permalink: /
     </aside>
   </div>
 </section>
-
-<!-- News -->
-<section class="section-alt" id="news">
-  <div class="container">
-    <p class="section-label">News</p>
-    <h2>Latest updates</h2>
-    <ul class="news-list">
-      {% for item in site.data.news %}
-      <li class="news-item">
-        <time>{{ item.date }}</time>
-        <p>{{ item.text }}{% if item.link %} <a href="{{ item.link | relative_url }}">{{ item.link_label | default: "Read more" }} &rarr;</a>{% endif %}</p>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>

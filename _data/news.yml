@@ -2,22 +2,22 @@
 # News items, newest first. `date` is free text (shown as-is).
 # `link`/`link_label` are optional.
 # ---------------------------------------------------------------------------
-- date: "Jan 2026"
-  text: "New paper on distributed uplink anti-jamming in LEO mega-constellations via game-theoretic beamforming."
-  link: "https://arxiv.org/abs/2601.15557"
-  link_label: "arXiv:2601.15557"
+- date: "Nov 3, 2026"
+  text: "Register for the NYU WIRELESS Board Meeting and Open House on Tuesday, Nov 3, at 370 Jay Street in Brooklyn. Meet our students at the poster session and see live lab demos. Registration closes Oct 23."
+  link: "https://wp.nyu.edu/tandonschoolofengineering-wirelessboardmeeting"
+  link_label: "Register"
 
-- date: "Oct 2025"
-  text: "New paper on joint detection, channel estimation, and interference nulling for terrestrial-satellite downlink co-existence in the upper mid-band."
-  link: "https://arxiv.org/abs/2510.08824"
-  link_label: "arXiv:2510.08824"
+- date: "Nov 3–5, 2026"
+  text: "Our annual Brooklyn AI-Native 6G Summit, co-hosted by NYU WIRELESS and Nokia, returns with the theme “Networks at the dawn of the AI Supercycle.” Senior leaders from operators, vendors, and academia come together in Brooklyn to chart the path to AI-native 6G. Past speakers include executives from Nokia, Verizon, and NVIDIA."
+  link: "https://www.b6gs.com/"
+  link_label: "b6gs.com"
 
-- date: "2024"
-  text: "Project launched: Spectrally Agile Large-Scale Arrays for the Upper Mid-Band, supported by NTIA (NOFO-1 and NOFO-2)."
-  link: "/research/spectrally-agile-arrays/"
-  link_label: "Project page"
+- date: "Oct 2026"
+  text: "Watch our presentation of FALCON, our NSF VINES Track 2 project on resilient wireless links for drones and ground robots."
+  link: "https://www.youtube.com/watch?v=zkoxwdPACqs"
+  link_label: "Watch on YouTube"
 
-- date: "2024"
-  text: "New NSF CISE Core award: Hardware Co-Design for next-generation wireless."
-  link: "/research/hardware-co-design/"
-  link_label: "Project page"
+- date: "Sep 2026"
+  text: "Our group has received a nearly $4.7M NSF VINES award for FALCON, a project we are leading to build wireless technology that keeps drones connected as conditions change. Drones will sense their surroundings, switch frequencies, adjust flight paths, and relay links to other drones and ground robots. Partners include NC State, UC Berkeley, FIU, and industry collaborators."
+  link: "https://engineering.nyu.edu/news/nyu-tandon-led-team-developing-wireless-technology-keep-drones-connected"
+  link_label: "NYU Tandon news"

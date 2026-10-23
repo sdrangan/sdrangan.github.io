@@ -507,7 +507,8 @@ h3 { font-size: 19px; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
 .alumni-list li { padding: 10px 0; border-bottom: 1px solid var(--line); margin: 0; }
 
 /* ---------- News ---------- */
-.news-list { list-style: none; padding: 0; margin: 0; }
+.news-list { list-style: none; padding: 0 !important; margin: 0; }
+.prose .news-item { margin: 0; }
 .news-item {
   display: grid; grid-template-columns: 110px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--line);
 }
