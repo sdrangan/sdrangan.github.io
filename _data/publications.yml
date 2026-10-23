@@ -8,8 +8,9 @@
 #   spectrally-agile-arrays, satellite-terrestrial-coexistence, fr3-prototyping,
 #   hardware-co-design, wireless-robotic-navigation, falcon, waveflow
 #
-# Required: title, authors, venue, year, url, projects
-# Optional: arxiv (shown as a link when url is not already arXiv), code, note
+# Required: title, authors, venue, year, projects
+# Optional: url (the title links to it; leave out until a paper is online),
+#           arxiv (shown as a link when url is not already arXiv), code, note
 # Quote arXiv IDs so they stay text, e.g. arxiv: "2309.03038".
 
 # ---------- Upper mid-band systems and SALSA ----------
@@ -143,6 +144,13 @@
   year: 2025
   url: https://doi.org/10.1109/WiSNeT63956.2025.10905015
   projects: [hardware-co-design, spectrally-agile-arrays]
+
+- title: "Hardware-Algorithm Co-Design for Interference Mitigation in FR3 Receivers"
+  authors: "P. Yang, O. Yildiz, R. Nikandish, W. Xia, S. Rangan, E. Erkip, H. Rahmani"
+  venue: "Asilomar Conference on Signals, Systems, and Computers"
+  year: 2026
+  # To be presented Nov 2026; add the IEEE Xplore DOI as url once the proceedings are published.
+  projects: [hardware-co-design]
 
 # ---------- Wireless-aided robotic navigation ----------
 

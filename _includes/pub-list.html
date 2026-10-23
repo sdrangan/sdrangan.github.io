@@ -14,7 +14,7 @@ Curated papers from _data/publications.yml, in the order given, one citation per
 <ol class="pub-list">
 {% for p in pubs %}
   <li class="pub">
-    {{ p.authors }}, <a class="pub-title" href="{{ p.url }}">{{ p.title }}</a>, <span class="pub-venue">{{ p.venue }}</span>, {{ p.year }}.
+    {{ p.authors }}, {% if p.url and p.url != '' %}<a class="pub-title" href="{{ p.url }}">{{ p.title }}</a>{% else %}<span class="pub-title">{{ p.title }}</span>{% endif %}, <span class="pub-venue">{{ p.venue }}</span>, {{ p.year }}.
     {%- if p.arxiv and p.arxiv != '' %}{% unless p.url contains 'arxiv.org' %} <a class="pub-link" href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endunless %}{% endif %}
     {%- if p.code and p.code != '' %} <a class="pub-link" href="{{ p.code }}">Code</a>{% endif %}
     {%- if include.tags -%}
