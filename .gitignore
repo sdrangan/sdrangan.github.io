@@ -1,6 +1,9 @@
 # Source materials (bio, proposals, original photo) — not published
 material/
 
+# SALSA report spreadsheets; rebuilt by _pubs/build.py
+_pubs/output/
+
 _site/
 .sass-cache/
 .jekyll-cache/
