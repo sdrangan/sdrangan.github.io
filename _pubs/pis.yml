@@ -1,0 +1,74 @@
+# SALSA investigators, used by scrape.py to find publications in OpenAlex.
+# Only papers with at least one of these PIs as an author are tracked; papers
+# by other co-authors or students alone are out of scope.
+#
+# awards: which NTIA awards the person is on (nofo1, nofo2). A paper's default
+#         award is the union of its authors' awards; override it in decisions.yml.
+# openalex_ids: one or more OpenAlex author IDs (A followed by digits). List
+#         every profile if the person's papers are split across several.
+# orcid: optional; used to check the OpenAlex match.
+#
+# Awards and personnel follow _pages/salsa-team.md.
+
+awards:
+  nofo1:
+    name: "Testing for Open, Secure and Adaptive Spectrum Sharing in FR3"
+    recipient: "New York University [36-60-IF003]"
+    file: "NYU IF003 NOFO-1 products"   # output name; the report end date is appended
+    start: 2023-01-01
+  nofo2:
+    name: "Spectrally Agile and Scalable Open Radio Units for the Upper Mid-Band"
+    recipient: "New York University (NYU) [36-60-IF2419]"
+    file: "NYU IF2419 NOFO-2 products"
+    start: 2025-01-01
+
+# Reports cover six-month periods ending 3/31 and 9/30. The scraper searches
+# back to the award start; build.py keeps only items dated inside the period.
+report:
+  start: 2026-04-01
+  end: 2026-09-30
+
+pis:
+  - name: "Sundeep Rangan"
+    affiliation: "NYU"
+    awards: [nofo1, nofo2]
+    openalex_ids: [A5000099903]
+    orcid: ""
+
+  - name: "Hamed Rahmani"
+    affiliation: "NYU"
+    awards: [nofo1, nofo2]
+    openalex_ids: [A5066586950]
+    orcid: ""
+
+  - name: "Aditya Dhananjay"
+    affiliation: "Pi-Radio"
+    awards: [nofo1, nofo2]
+    openalex_ids: [A5042996056]
+    orcid: ""
+
+  - name: "Arjuna Madanayake"
+    affiliation: "FIU"
+    awards: [nofo1]
+    openalex_ids: [A5064035420]
+    orcid: "0000-0003-3478-6702"
+
+  - name: "Marco Mezzavilla"
+    affiliation: "Politecnico di Milano"
+    awards: [nofo1]
+    openalex_ids: [A5031845788]
+    orcid: ""
+
+  - name: "Ivan Seskar"
+    affiliation: "Rutgers WINLAB"
+    awards: [nofo2]
+    openalex_ids: [A5053123664]
+    orcid: ""
+
+  - name: "Kaushik Sengupta"
+    affiliation: "Princeton"
+    awards: [nofo2]
+    openalex_ids: [A5086851941]
+    orcid: ""
+
+# Jinfeng Du (Nokia, NOFO-2) is left out: no publications to track.

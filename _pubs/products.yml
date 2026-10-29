@@ -1,0 +1,65 @@
+# Products other than papers (datasets, software, testbeds, talks, patents, ...),
+# added by hand. build.py puts each one in the report whose period contains
+# its date, together with the papers.
+#
+# Required: title, type, date, award (nofo1, nofo2 or both)
+# Optional: venue (where it was presented or released), authors, url, note
+#
+# Example:
+#   - title: "FR3 multi-band channel measurement dataset"
+#     type: Dataset
+#     date: 2026-06-15
+#     award: nofo2
+#     venue: "IEEE DataPort"
+#     authors: "A. Rasteh, S. Rangan"
+#     url: https://example.org/dataset
+#
+#   - title: "Spectrally agile arrays for the upper mid-band (invited talk)"
+#     type: Presentation
+#     date: 2026-05-20
+#     award: both
+#     venue: "IEEE ICC 2026 Workshop"
+#     authors: "S. Rangan"
+
+# Add entries below this line.
+
+# ---------- 2026-09-30 report ----------
+
+- title: "WaveFlow: agentic platform for complex hardware modeling"
+  type: Website
+  date: 2026-09-01   # approximate; the docs site is in a separate repo
+  award: nofo2
+  url: https://sdrangan.github.io/waveflow/docs/
+
+- title: "SALSA: Spectrally Agile and Scalable Arrays, project website"
+  type: Website
+  date: 2026-06-21   # first commit of the project page
+  award: both
+  url: https://sdrangan.github.io/research/spectrally-agile-arrays/
+
+- title: "FR3 Spectrally Agile Systems (workshop)"
+  type: Workshop
+  date: 2026-06-01   # month only
+  award: both
+  venue: "IEEE International Microwave Symposium (IMS) 2026"
+  authors: "H. Rahmani (organizer)"
+
+- title: "Building Spectrally Agile SDRs for FR3"
+  type: Presentation
+  date: 2026-06-01   # month only
+  award: both
+  venue: "FR3 Spectrally Agile Systems workshop, IEEE IMS 2026"
+  authors: "S. Rangan"
+
+- title: "NSF COSMOS3 Planning (workshop)"
+  type: Workshop
+  date: 2026-09-01   # month only
+  award: nofo2
+  authors: "I. Seskar (organizer)"
+
+- title: "Building Spectrally Agile SDRs for FR3"
+  type: Presentation
+  date: 2026-09-01   # month only
+  award: both
+  venue: "NSF COSMOS3 Planning workshop"
+  authors: "S. Rangan"

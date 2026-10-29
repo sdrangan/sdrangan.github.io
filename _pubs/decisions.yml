@@ -1,0 +1,247 @@
+# Manual decisions on the entries in candidates.yml, keyed by their id.
+#
+# An entry not listed here keeps its default awards from candidates.yml and is
+# shown by build.py as "needs review" until it is listed. List every entry you
+# have looked at, even when the default is right (award: default).
+#
+# Fields (all optional except award):
+#   award:  nofo1, nofo2, both, exclude, or default (keep the scraped awards)
+#   report: report end date (e.g. 2026-09-30) to put the entry in that report
+#           even if its date falls outside the period, e.g. a late item
+#   title, authors, venue, type, url, date: replace the scraped value
+#   note:   your own comment; not written to the spreadsheet
+#
+# Example:
+#   "arxiv:2604.02498":
+#     award: both
+#   "doi:10.1109/ojcoms.2026.3656868":
+#     award: nofo2
+#     venue: "IEEE Open Journal of the Communications Society"
+#   "arxiv:2511.09464":
+#     award: nofo2
+#     report: 2026-09-30
+#     note: "Missed in the 3/31 report"
+
+"doi:10.6084/m9.figshare.33990967":
+  award: exclude
+  note: "Not SALSA (gravitational communication)"
+
+"doi:10.5281/zenodo.22947971":
+  award: exclude
+  note: "Not SALSA (gravitational communication)"
+
+"doi:10.60893/figshare.jcp.31792243":
+  award: exclude
+  note: "Supplementary file, not a paper"
+
+# Electromagnetic Radiation Stimulated Learning in Perovskite Nickelates
+"doi:10.1002/advs.75984":
+  award: exclude
+  note: "Not SALSA (materials science)"
+
+# Generalization in One-Step Contextual Bandit Based DoA Estimation with Passive B
+"doi:10.1109/icassp55912.2026.11463940":
+  award: exclude
+  note: "Not SALSA (backscatter tag DoA)"
+
+# Ultrabroadband Near-Field THz Links: Towards a Novel System Design
+"doi:10.1109/icmmts68132.2026.11732892":
+  award: exclude
+  note: "Not SALSA (THz links)"
+
+# Asymmetric Angular Resilience in Near-Field Sub-THz Links: An Experimental Study
+"doi:10.1109/iccspa69228.2026.11600896":
+  award: exclude
+  note: "Not SALSA (sub-THz links)"
+
+# Mobile Near-Field Thz Communications: Towards Omnidirectional Receivers?
+"doi:10.1109/eucnc/6gsummit68295.2026.11577453":
+  award: exclude
+  note: "Not SALSA (THz links)"
+
+# Detection of sUAS in Urban Environments using Multi-Antenna Micro-Doppler Radar
+"arxiv:2607.11868":
+  award: exclude
+  note: "Not SALSA (drone radar)"
+
+# Additively-Deposited Fan-Out Interconnects for Power/RF Co-Packaging with Glass-
+"doi:10.1109/ectc51846.2026.00425":
+  award: exclude
+  note: "Not SALSA (packaging interconnects)"
+
+# Analog RF Cochleas in Space and Time: From 1-D Circuits to Multi-dimensional Fil
+"doi:10.1109/mercon71835.2026.11691362":
+  award: exclude
+  note: "Not SALSA (analog filter banks)"
+
+# Advancing Network Digital Twin Framework for Generating Realistic Datasets
+"arxiv:2604.12888":
+  award: exclude
+  note: "Not SALSA (network digital twin datasets)"
+
+# A Dual-Surface Programmable STAR-RIS Time-modulated Platform with Custom CMOS RF
+"doi:10.46620/ursigass26/zlwn2342":
+  award: exclude
+  note: "Not SALSA (60 GHz STAR-RIS)"
+
+# Packaging and Antenna Design for a 46 -Element Dual-Surface Mmwave Active STAR-R
+"doi:10.1109/imsrftt43070.2026.11602506":
+  award: exclude
+  note: "Not SALSA (mmWave STAR-RIS)"
+
+# Millimeter-Wave Active STAR-RIS with Programmable Reflect and Transmit Operation
+"doi:10.1109/imsrfsa70221.2026.11623658":
+  award: exclude
+  note: "Not SALSA (mmWave STAR-RIS)"
+
+# A Millimeter-Wave Wideband Sparse Array of Surface-Wave-Immune Laminated Resonan
+"doi:10.1109/jmw.2026.3694957":
+  award: exclude
+  note: "Not SALSA (mmWave radar array)"
+
+# Integrated Low-Power Self-Coherent Kramers–Kronig Millimeter-Wave Receiver With 
+"doi:10.1109/jssc.2026.3720585":
+  award: exclude
+  note: "Not SALSA (mmWave receiver)"
+
+# ---------- Reviewed for the 2026-09-30 report: default awards kept ----------
+
+# MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in 
+"arxiv:2609.20670":
+  award: default
+
+# 5 Shades of Cooperation: Spectrum Sharing in the Upper-Mid Band
+"arxiv:2608.23170":
+  award: default
+
+# Interference-Tolerant Mixer-First Receivers for FR3: Design Principles and Trade
+"arxiv:2608.22647":
+  award: default
+
+# A Reconfigurable CMOS Mixer with Adaptive Gain and Linearity for Native-AI RF Sy
+"doi:10.1109/mwscas67364.2026.11680813":
+  award: default
+
+# A 500-MHz BW Beamforming Chiplet Pair with Analog Approximate-DFT and Dual 10-Gb
+"doi:10.1109/mwscas67364.2026.11680805":
+  award: default
+
+# Multi-Agent Neurosymbolic AI for Self-Adapting RF Transceivers
+"doi:10.1109/mwscas67364.2026.11680687":
+  award: default
+
+# LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digi
+"arxiv:2608.00406":
+  award: default
+
+# The Anatomy of RF Chains: Metrics, Measures, and Operating Efficiency
+"arxiv:2608.00223":
+  award: default
+
+# Noncoherent Detection and Interference Nulling for Terrestrial-Satellite Downlin
+"arxiv:2607.21838":
+  award: default
+
+# The Anatomy of RF Chains: Metrics, Measures, and Operating Efficiency
+"doi:10.1109/mmm.2026.3706013":
+  award: default
+
+# Joint Beamforming and Neural Network-Based Digital Predistortion for Directional
+"doi:10.5281/zenodo.21369549":
+  award: default
+
+# Toward multiband sensing in FR3: frequency anisotropy characterization and non-c
+"doi:10.1038/s44459-026-00052-z":
+  award: default
+
+# Efficient Upper Mid-Band Spectrum Sensing with Multiple Signals
+"arxiv:2607.02982":
+  award: default
+
+# AI Designs Radio Chips That Humans Couldn't Even Imagine: Making Radio Chips is 
+"doi:10.1109/mspec.2026.11595938":
+  award: default
+
+# AI-Enabled Non-Intuitive RF Passive and Antenna Design
+"doi:10.1109/ap-s/usnc-ursi60190.2026.11675153":
+  award: default
+
+# Artificial Intelligence for RFIC Design: Early Advancements, Opportunities, and 
+"doi:10.1109/mssc.2026.3680917":
+  award: default
+
+# Near Field Multi-Band Localization: CRB, Efficient Estimator, and Threshold SNR
+"arxiv:2606.12314":
+  award: default
+
+# Experimental Evaluation of Beam Steering with Phased MIMO Radar for OFDM-Based I
+"doi:10.1109/eucnc/6gsummit68295.2026.11577307":
+  award: default
+
+# AI-enabled Inverse Design of Harmonic Terminated mmWave PAs and Frequency Double
+"doi:10.1109/imsrfsa70221.2026.11624316":
+  award: default
+
+# AI-enabled Inverse Design of Planar RF Passives Under Arbitrary Footprint Constr
+"doi:10.1109/imsrfsa70221.2026.11624309":
+  award: default
+
+# Low-Complexity Multi-beamforming with Configurable Beam Profiles via Approximate
+"doi:10.1109/iscas66217.2026.11562343":
+  award: default
+
+# An Automated Framework for Optimal Selection of Approximate Computing Units for 
+"doi:10.1109/iscas66217.2026.11562084":
+  award: default
+
+# Transformer-Based Rate Prediction for Multi-Band Cellular Handsets
+"doi:10.1109/iccworkshops63917.2026.11586536":
+  award: default
+
+# Multi-Band Integrated Sensing and Communication Channel Measurements in the FR3
+"doi:10.1109/icc59461.2026.11587310":
+  award: default
+
+# Distributed Uplink Anti-Jamming in LEO Mega-Constellations via Game-Theoretic Be
+"doi:10.1109/icc59461.2026.11586786":
+  award: default
+
+# NICE: RF Spectrogram–Ephemeris Fusion for Satellite Interference Mode Classifica
+"doi:10.1109/infocom59046.2026.11571231":
+  award: default
+
+# Modeling and Mitigation of 7.125-7.40 GHz Terrestrial Network RFI on the Passive
+"doi:10.1109/dyspan69846.2026.11571144":
+  award: default
+
+# COSMOS ZMS: A Radio Dynamic Zone Management System Using the COSMOS Platform
+"doi:10.1109/dyspan69846.2026.11571138":
+  award: default
+
+# Low-rank Preconditioning in Beamspace Domain For Massive MU-MIMO Long-Term Beamf
+"arxiv:2605.02748":
+  award: default
+
+# Modeling and Mitigation of 7.125-7.40 GHz Terrestrial Network RFI on the Passive
+"arxiv:2605.02079":
+  award: default
+
+# AI-enabled RFIC
+"doi:10.1109/cicc65509.2026.11509583":
+  award: default
+
+# Compressed Multiband Sensing in FR3 Using Alternating Direction Method of Multip
+"doi:10.1109/wcnc65185.2026.11555501":
+  award: default
+
+# Interference Suppression for Massive MU-MIMO Long-Term Beamforming with Matrix I
+"arxiv:2604.06355":
+  award: default
+
+# A Self-Calibrating SDR for High Fidelity Beam- and Null-forming Arrays
+"arxiv:2604.02498":
+  award: default
+
+# X-Band Adaptive Applebaum Nullforming Array Processor on Xilinx Sx475T FPGA
+"doi:10.23919/eucap68105.2026.11612159":
+  award: default
