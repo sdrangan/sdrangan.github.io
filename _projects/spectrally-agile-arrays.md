@@ -5,8 +5,7 @@ order: 1
 featured: true
 summary: "Wideband, frequency-agile RFICs and tileable massive MIMO radios for the upper mid-band (FR3), built as an Open Radio Unit."
 sponsor: "NTIA Innovation Fund (NOFO-1 & 2)"
-thumbnail: "/assets/images/projects/salsa/overview.svg"
-thumbnail_fit: contain
+thumbnail: "/assets/images/projects/salsa/thumb.jpg"
 wide: true
 hero_overlap: true
 site_nav: salsa
